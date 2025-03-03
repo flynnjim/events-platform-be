@@ -1,4 +1,4 @@
-interface Event {
+export interface Event {
   event_id: number;
   title: string;
   description: string;
@@ -8,7 +8,7 @@ interface Event {
   end_time: Date;
 }
 
-const events: Event[] = [
+const eventData: Event[] = [
   {
     event_id: 1,
     title: "Tech Conference 2025",
@@ -61,4 +61,4 @@ const events: Event[] = [
   },
 ];
 
-export default events;
+export default eventData;

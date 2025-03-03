@@ -1,4 +1,4 @@
-interface Staff {
+export interface Staff {
   staff_id: number;
   first_name: string;
   last_name: string;
@@ -6,7 +6,7 @@ interface Staff {
   password_hash: string;
 }
 
-const staff: Staff[] = [
+const staffData: Staff[] = [
   {
     staff_id: 1,
     first_name: "Liam",
@@ -44,4 +44,4 @@ const staff: Staff[] = [
   },
 ];
 
-export default staff;
+export default staffData;

@@ -1,4 +1,4 @@
-interface User {
+export interface User {
   user_id: number;
   username: string;
   first_name: string;
@@ -8,7 +8,7 @@ interface User {
   user_type: "staff" | "user";
 }
 
-const users: User[] = [
+const userData: User[] = [
   {
     user_id: 1,
     username: "tech_guru",
@@ -56,4 +56,4 @@ const users: User[] = [
   },
 ];
 
-export default users;
+export default userData;

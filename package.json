@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "setup-dbs": "psql -f ./src/db/setup.sql",
+    "seed": "ts-node ./src/db/seeds/run-seed.ts",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "ts-node src/listen.ts",
     "dev": "nodemon src/listen.ts"
@@ -16,12 +17,14 @@
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "nodemon": "^3.1.9",
-    "pg": "^8.13.3"
+    "pg": "^8.13.3",
+    "pg-format": "^1.0.4"
   },
   "devDependencies": {
     "@types/express": "^5.0.0",
     "@types/node": "^22.13.5",
     "@types/pg": "^8.11.11",
+    "@types/pg-format": "^1.0.5",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.3"
   }

@@ -1,4 +1,4 @@
-interface Registration {
+export interface Registration {
   registration_id: number;
   user_id: number;
   event_id: number;
@@ -6,7 +6,7 @@ interface Registration {
   status: "Confirmed" | "Cancelled";
 }
 
-const registrations: Registration[] = [
+const registrationData: Registration[] = [
   {
     registration_id: 1,
     user_id: 3,
@@ -44,4 +44,4 @@ const registrations: Registration[] = [
   },
 ];
 
-export default registrations;
+export default registrationData;
