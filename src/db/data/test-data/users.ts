@@ -5,7 +5,6 @@ export interface User {
   last_name: string;
   email: string;
   password_hash: string;
-  user_type: "staff" | "user";
 }
 
 const userData: User[] = [
@@ -16,7 +15,6 @@ const userData: User[] = [
     last_name: "Johnson",
     email: "alice.johnson@example.com",
     password_hash: "$2b$10$abcdefghijklmnopqrstuv",
-    user_type: "user",
   },
   {
     user_id: 2,
@@ -25,7 +23,6 @@ const userData: User[] = [
     last_name: "Smith",
     email: "bob.smith@example.com",
     password_hash: "$2b$10$1234567890abcdefghijklm",
-    user_type: "staff",
   },
   {
     user_id: 3,
@@ -34,7 +31,6 @@ const userData: User[] = [
     last_name: "Brown",
     email: "charlie.brown@example.com",
     password_hash: "$2b$10$zyxwvutsrqponmlkjihgfedc",
-    user_type: "user",
   },
   {
     user_id: 4,
@@ -43,7 +39,6 @@ const userData: User[] = [
     last_name: "Lopez",
     email: "diana.lopez@example.com",
     password_hash: "$2b$10$pqrstuvwxyzabcdefghijk",
-    user_type: "staff",
   },
   {
     user_id: 5,
@@ -52,7 +47,6 @@ const userData: User[] = [
     last_name: "Walker",
     email: "ethan.walker@example.com",
     password_hash: "$2b$10$mnopqrstuvwxabcdefghijkl",
-    user_type: "user",
   },
 ];
 

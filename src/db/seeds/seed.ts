@@ -30,8 +30,7 @@ const seed = async ({
       first_name VARCHAR NOT NULL,
       last_name VARCHAR NOT NULL,
       email VARCHAR NOT NULL UNIQUE,
-      password_hash VARCHAR NOT NULL,
-      user_type VARCHAR NOT NULL
+      password_hash VARCHAR NOT NULL
     );
   `);
 
@@ -68,16 +67,15 @@ const seed = async ({
   `);
 
   const insertUsersQuery = format(
-    `INSERT INTO users (username, first_name, last_name, email, password_hash, user_type) VALUES %L RETURNING *;`,
+    `INSERT INTO users (username, first_name, last_name, email, password_hash) VALUES %L RETURNING *;`,
     userData.map(
-      ({
+      ({ username, first_name, last_name, email, password_hash }) => [
         username,
         first_name,
         last_name,
         email,
         password_hash,
-        user_type,
-      }) => [username, first_name, last_name, email, password_hash, user_type]
+      ]
     )
   );
   await db.query(insertUsersQuery);
