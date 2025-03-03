@@ -1,7 +1,11 @@
-const express = require("express");
+import express from "express";
 const app = express();
-// const cors = require("cors");
-// app.use(cors());
+import cors from "cors";
+app.use(cors());
 app.use(express.json());
+
+import { getUsers } from "./controllers/index.controllers";
+
+app.get("/api/users", getUsers);
 
 export default app;
