@@ -1,16 +1,7 @@
 import format from "pg-format";
 import db from "../connection";
-import { Event } from "../data/test-data/events";
-import { Registration } from "../data/test-data/registration";
-import { Staff } from "../data/test-data/staff";
-import { User } from "../data/test-data/users";
 
-interface SeedData {
-  eventData: Event[];
-  userData: User[];
-  staffData: Staff[];
-  registrationData: Registration[];
-}
+import { SeedData } from "../../types/types";
 
 const seed = async ({
   eventData,
