@@ -1,7 +1,4 @@
-import { Event } from "./events";
-import { Registration } from "./registration";
-import { Staff } from "./staff";
-import { User } from "./users";
+import { User, Event, Registration, Staff } from "../../../types/types";
 
 import eventDataDefault from "./events";
 import registrationDataDefault from "./registration";

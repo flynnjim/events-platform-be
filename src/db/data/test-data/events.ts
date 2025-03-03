@@ -1,12 +1,4 @@
-export interface Event {
-  event_id: number;
-  title: string;
-  description: string;
-  location: { latitude: number; longitude: number };
-  created_by: number;
-  start_time: Date;
-  end_time: Date;
-}
+import { Event } from "../../../types/types";
 
 const eventData: Event[] = [
   {

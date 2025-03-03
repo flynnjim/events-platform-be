@@ -1,10 +1,4 @@
-export interface Registration {
-  registration_id: number;
-  user_id: number;
-  event_id: number;
-  registration_date: Date;
-  status: "Confirmed" | "Cancelled";
-}
+import { Registration } from "../../../types/types";
 
 const registrationData: Registration[] = [
   {
