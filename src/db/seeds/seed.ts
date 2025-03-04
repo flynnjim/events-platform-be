@@ -41,6 +41,7 @@ const seed = async ({
       title VARCHAR NOT NULL,
       description VARCHAR NOT NULL,
       location JSONB NOT NULL,
+      address VARCHAR NOT NULL,
       created_by INT REFERENCES staff(staff_id),
       start_time TIMESTAMP NOT NULL,
       end_time TIMESTAMP NOT NULL
@@ -83,12 +84,21 @@ const seed = async ({
   await db.query(insertStaffQuery);
 
   const insertEventsQuery = format(
-    `INSERT INTO events (title, description, location, created_by, start_time, end_time) VALUES %L RETURNING *;`,
+    `INSERT INTO events (title, description, location, address, created_by, start_time, end_time) VALUES %L RETURNING *;`,
     eventData.map(
-      ({ title, description, location, created_by, start_time, end_time }) => [
+      ({
+        title,
+        description,
+        location,
+        address,
+        created_by,
+        start_time,
+        end_time,
+      }) => [
         title,
         description,
         JSON.stringify(location),
+        address,
         created_by,
         start_time,
         end_time,

@@ -4,12 +4,18 @@ import cors from "cors";
 app.use(cors());
 app.use(express.json());
 
-import { getUsers, getSingleUser } from "./controllers/index.controllers";
+import {
+  getUsers,
+  getSingleUser,
+  getAllEvents,
+} from "./controllers/index.controllers";
 import { errorHandler } from "./middlewares/error-handler.middlewares";
 
 app.get("/api/users", getUsers);
 
 app.get("/api/users/:user_id", getSingleUser);
+
+app.get("/api/events", getAllEvents);
 
 app.all("*", (request, response) => {
   response
