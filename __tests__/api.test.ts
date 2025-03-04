@@ -48,4 +48,45 @@ describe("Events Platfomr Backend API", () => {
         });
     });
   });
+  describe("GET /api/users/:user_id", () => {
+    test("returns a 200 response status with correct data properties", () => {
+      return request(app)
+        .get("/api/users/2")
+        .expect(200)
+        .then((response) => {
+          const {
+            body: { user },
+          } = response;
+          expect(Array.isArray(user)).toBe(false);
+          expect(user.user_id).toBe(2);
+          expect(user.username).toBe("code_master");
+          expect(user.first_name).toBe("Bob");
+          expect(user.last_name).toBe("Smith");
+          expect(user.email).toBe("bob.smith@example.com");
+          expect(user.password_hash).toBe("$2b$10$1234567890abcdefghijklm");
+        });
+    });
+    test("returns a 400 Bad request when parameter is invalid", () => {
+      return request(app)
+        .get("/api/users/two")
+        .expect(400)
+        .then((response) => {
+          const {
+            body: { msg },
+          } = response;
+          expect(msg).toBe("Bad request");
+        });
+    });
+    test("returns a 404 not found when parameter is out of user_id range", () => {
+      return request(app)
+        .get("/api/users/99")
+        .expect(404)
+        .then((response) => {
+          const {
+            body: { msg },
+          } = response;
+          expect(msg).toBe("User not found");
+        });
+    });
+  });
 });
