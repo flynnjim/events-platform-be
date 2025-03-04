@@ -12,6 +12,7 @@ export interface Event {
   title: string;
   description: string;
   location: { latitude: number; longitude: number };
+  address: string;
   created_by: number;
   start_time: Date;
   end_time: Date;

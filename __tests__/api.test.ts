@@ -3,7 +3,7 @@ import request from "supertest";
 import db from "../src/db/connection";
 import seed from "../src/db/seeds/seed";
 import testData from "../src/db/data/test-data";
-import { User } from "../src/types/types";
+import { User, Event } from "../src/types/types";
 
 beforeEach(async () => {
   await seed(testData);
@@ -86,6 +86,28 @@ describe("Events Platfomr Backend API", () => {
             body: { msg },
           } = response;
           expect(msg).toBe("User not found");
+        });
+    });
+  });
+  describe("GET /api/events", () => {
+    test("returns a 200 response status with correct data properties", () => {
+      return request(app)
+        .get("/api/events")
+        .expect(200)
+        .then((response) => {
+          const {
+            body: { events },
+          } = response;
+          expect(Array.isArray(events)).toBe(true);
+          events.forEach((event: Event) => {
+            expect(event).toHaveProperty("event_id");
+            expect(event).toHaveProperty("title");
+            expect(event).toHaveProperty("description");
+            expect(event).toHaveProperty("location");
+            expect(event).toHaveProperty("created_by");
+            expect(event).toHaveProperty("start_time");
+            expect(event).toHaveProperty("end_time");
+          });
         });
     });
   });
