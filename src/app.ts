@@ -9,6 +9,7 @@ import {
   getSingleUser,
   getAllEvents,
   getSingleEvent,
+  getRegisteredUsers,
 } from "./controllers/index.controllers";
 import { errorHandler } from "./middlewares/error-handler.middlewares";
 
@@ -19,6 +20,8 @@ app.get("/api/users/:user_id", getSingleUser);
 app.get("/api/events", getAllEvents);
 
 app.get("/api/events/:event_id", getSingleEvent);
+
+app.get("/api/users/registered/:event_id", getRegisteredUsers);
 
 app.all("*", (request, response) => {
   response

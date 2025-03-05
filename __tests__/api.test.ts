@@ -111,7 +111,7 @@ describe("Events Platfomr Backend API", () => {
         });
     });
   });
-  describe("GET/api/events/:event_id", () => {
+  describe("GET /api/events/:event_id", () => {
     test("returns a 200 response status with correct data properties", () => {
       return request(app)
         .get("/api/events/1")
@@ -153,6 +153,48 @@ describe("Events Platfomr Backend API", () => {
             body: { msg },
           } = response;
           expect(msg).toBe("Event not found");
+        });
+    });
+  });
+  describe("GET /api/users/registered/:event_id", () => {
+    test("returns a 200 response status with correct data properties", () => {
+      return request(app)
+        .get("/api/users/registered/1")
+        .expect(200)
+        .then((response) => {
+          const {
+            body: { users },
+          } = response;
+          expect(Array.isArray(users)).toBe(true);
+          users.forEach((user: User) => {
+            expect(user.user_id).toBe(3);
+            expect(user.username).toBe("dev_wizard");
+            expect(user.first_name).toBe("Charlie");
+            expect(user.last_name).toBe("Brown");
+            expect(user.email).toBe("charlie.brown@example.com");
+          });
+        });
+    });
+    test("returns a 400 Bad request when parameter is invalid", () => {
+      return request(app)
+        .get("/api/users/registered/one")
+        .expect(400)
+        .then((response) => {
+          const {
+            body: { msg },
+          } = response;
+          expect(msg).toBe("Bad request");
+        });
+    });
+    test("returns a 404 not found when parameter is out of event_id range", () => {
+      return request(app)
+        .get("/api/users/registered/99")
+        .expect(404)
+        .then((response) => {
+          const {
+            body: { msg },
+          } = response;
+          expect(msg).toBe("Users not found");
         });
     });
   });
