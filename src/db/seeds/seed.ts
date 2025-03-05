@@ -2,6 +2,7 @@ import format from "pg-format";
 import db from "../connection";
 
 import { SeedData } from "../../types/types";
+import { convertTimestampToDate } from "./utils";
 
 const seed = async ({
   eventData,
@@ -43,8 +44,8 @@ const seed = async ({
       location JSONB NOT NULL,
       address VARCHAR NOT NULL,
       created_by INT REFERENCES staff(staff_id),
-      start_time TIMESTAMP NOT NULL,
-      end_time TIMESTAMP NOT NULL
+      start_time TIMESTAMP DEFAULT NOW(),
+      end_time TIMESTAMP DEFAULT NOW()
     );
   `);
 
@@ -85,26 +86,20 @@ const seed = async ({
 
   const insertEventsQuery = format(
     `INSERT INTO events (title, description, location, address, created_by, start_time, end_time) VALUES %L RETURNING *;`,
-    eventData.map(
-      ({
-        title,
-        description,
-        location,
-        address,
-        created_by,
-        start_time,
-        end_time,
-      }) => [
-        title,
-        description,
-        JSON.stringify(location),
-        address,
-        created_by,
-        start_time,
-        end_time,
-      ]
-    )
+    eventData.map((event) => {
+      const convertedEvent = convertTimestampToDate(event);
+      return [
+        convertedEvent.title,
+        convertedEvent.description,
+        JSON.stringify(convertedEvent.location),
+        convertedEvent.address,
+        convertedEvent.created_by,
+        convertedEvent.start_time,
+        convertedEvent.end_time,
+      ];
+    })
   );
+
   await db.query(insertEventsQuery);
 
   const insertRegistrationQuery = format(
