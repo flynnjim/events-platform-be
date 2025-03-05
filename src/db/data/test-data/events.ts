@@ -9,8 +9,8 @@ const eventData: Event[] = [
     location: { latitude: 37.7749, longitude: -122.4194 },
     address: "Moscone Center, 747 Howard St, San Francisco, CA 94103, USA",
     created_by: 2,
-    start_time: new Date("2025-06-15T09:00:00"),
-    end_time: new Date("2025-06-15T17:00:00"),
+    start_time: 1755277200000,
+    end_time: 1755306000000,
   },
   {
     event_id: 2,
@@ -20,8 +20,8 @@ const eventData: Event[] = [
     location: { latitude: 40.7128, longitude: -74.006 },
     address: "IBM Watson Building, 51 Astor Pl, New York, NY 10003, USA",
     created_by: 4,
-    start_time: new Date("2025-07-10T10:00:00"),
-    end_time: new Date("2025-07-12T16:00:00"),
+    start_time: 1757421600000,
+    end_time: 1757596800000,
   },
   {
     event_id: 3,
@@ -32,8 +32,8 @@ const eventData: Event[] = [
     address:
       "Los Angeles Convention Center, 1201 S Figueroa St, Los Angeles, CA 90015, USA",
     created_by: 2,
-    start_time: new Date("2025-08-05T14:00:00"),
-    end_time: new Date("2025-08-05T18:00:00"),
+    start_time: 1759711200000,
+    end_time: 1759725600000,
   },
   {
     event_id: 4,
@@ -44,8 +44,8 @@ const eventData: Event[] = [
     address:
       "The Royal Society, 6-9 Carlton House Terrace, London SW1Y 5AG, UK",
     created_by: 4,
-    start_time: new Date("2025-09-20T08:30:00"),
-    end_time: new Date("2025-09-20T16:30:00"),
+    start_time: 1763665800000,
+    end_time: 1763694600000,
   },
   {
     event_id: 5,
@@ -55,8 +55,8 @@ const eventData: Event[] = [
     location: { latitude: 48.8566, longitude: 2.3522 },
     address: "CNAM, 292 Rue Saint-Martin, 75003 Paris, France",
     created_by: 2,
-    start_time: new Date("2025-10-01T09:00:00"),
-    end_time: new Date("2025-10-01T17:00:00"),
+    start_time: 1764618000000,
+    end_time: 1764646800000,
   },
 ];
 

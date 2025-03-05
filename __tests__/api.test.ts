@@ -111,4 +111,49 @@ describe("Events Platfomr Backend API", () => {
         });
     });
   });
+  describe("GET/api/events/:event_id", () => {
+    test("returns a 200 response status with correct data properties", () => {
+      return request(app)
+        .get("/api/events/1")
+        .expect(200)
+        .then((response) => {
+          const {
+            body: { event },
+          } = response;
+          expect(Array.isArray(event)).toBe(false);
+          expect(event.event_id).toBe(1);
+          expect(event.description).toBe(
+            "A conference discussing the latest trends in technology and software development."
+          );
+          expect(event.location).toEqual({
+            latitude: 37.7749,
+            longitude: -122.4194,
+          });
+          expect(new Date(event.start_time)).toBeInstanceOf(Date);
+          expect(new Date(event.end_time)).toBeInstanceOf(Date);
+        });
+    });
+    test("returns a 400 Bad request when parameter is invalid", () => {
+      return request(app)
+        .get("/api/events/one")
+        .expect(400)
+        .then((response) => {
+          const {
+            body: { msg },
+          } = response;
+          expect(msg).toBe("Bad request");
+        });
+    });
+    test("returns a 404 not found when parameter is out of event_id range", () => {
+      return request(app)
+        .get("/api/events/99")
+        .expect(404)
+        .then((response) => {
+          const {
+            body: { msg },
+          } = response;
+          expect(msg).toBe("Event not found");
+        });
+    });
+  });
 });

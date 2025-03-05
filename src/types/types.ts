@@ -14,8 +14,8 @@ export interface Event {
   location: { latitude: number; longitude: number };
   address: string;
   created_by: number;
-  start_time: Date;
-  end_time: Date;
+  start_time: number;
+  end_time: number;
 }
 
 export interface Registration {
