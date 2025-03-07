@@ -1,9 +1,9 @@
-import app from "../src/app";
+import app from "../app";
 import request from "supertest";
-import db from "../src/db/connection";
-import seed from "../src/db/seeds/seed";
-import testData from "../src/db/data/test-data";
-import { User, Event } from "../src/types/types";
+import db from "../db/connection";
+import seed from "../db/seeds/seed";
+import testData from "../db/data/test-data";
+import { User, Event } from "../types/types";
 
 beforeEach(async () => {
   await seed(testData);

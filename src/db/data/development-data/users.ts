@@ -122,3 +122,5 @@ const userData: User[] = [
     password_hash: "$2b$10$abcdefghijklmnopqrstuv",
   },
 ];
+
+export default userData;
