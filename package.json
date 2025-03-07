@@ -1,13 +1,15 @@
 {
   "name": "events-platform-be",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/listen.js",
   "scripts": {
+    "build": "tsc",
     "setup-dbs": "psql -f ./src/db/setup.sql",
-    "seed": "ts-node ./src/db/seeds/run-seed.ts",
+    "seed": "node ./dist/db/seeds/run-seed.js",
     "test": "jest",
-    "start": "ts-node src/listen.ts",
-    "dev": "nodemon src/listen.ts"
+    "start": "node dist/listen.js",
+    "dev": "nodemon src/listen.ts",
+    "seed-prod": "NODE_ENV=production npm run seed"
   },
   "keywords": [],
   "author": "",

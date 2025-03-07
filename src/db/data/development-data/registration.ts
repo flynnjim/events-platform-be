@@ -702,3 +702,5 @@ const registrationData: Registration[] = [
     status: "Confirmed",
   },
 ];
+
+export default registrationData;

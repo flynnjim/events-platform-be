@@ -1,0 +1,15 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.getAllStaff = exports.getRegisteredUsers = exports.getSingleEvent = exports.getAllEvents = exports.getSingleUser = exports.getUsers = void 0;
+const get_all_users_controllers_1 = require("./get-all-users.controllers");
+Object.defineProperty(exports, "getUsers", { enumerable: true, get: function () { return get_all_users_controllers_1.getUsers; } });
+const get_single_user_controllers_1 = require("./get-single-user.controllers");
+Object.defineProperty(exports, "getSingleUser", { enumerable: true, get: function () { return get_single_user_controllers_1.getSingleUser; } });
+const get_all_events_controllers_1 = require("./get-all-events.controllers");
+Object.defineProperty(exports, "getAllEvents", { enumerable: true, get: function () { return get_all_events_controllers_1.getAllEvents; } });
+const get_single_event_controllers_1 = require("./get-single-event.controllers");
+Object.defineProperty(exports, "getSingleEvent", { enumerable: true, get: function () { return get_single_event_controllers_1.getSingleEvent; } });
+const get_registered_users_controllers_1 = require("./get-registered-users.controllers");
+Object.defineProperty(exports, "getRegisteredUsers", { enumerable: true, get: function () { return get_registered_users_controllers_1.getRegisteredUsers; } });
+const get_all_staff_controllers_1 = require("./get-all-staff.controllers");
+Object.defineProperty(exports, "getAllStaff", { enumerable: true, get: function () { return get_all_staff_controllers_1.getAllStaff; } });

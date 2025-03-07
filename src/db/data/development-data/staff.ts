@@ -107,3 +107,5 @@ const staffData: Staff[] = [
     password_hash: "$2b$10$abcdefg12345678nJ3kY9Q5/2tF6R7T9X1mP6r9gTp",
   },
 ];
+
+export default staffData;
