@@ -198,4 +198,24 @@ describe("Events Platfomr Backend API", () => {
         });
     });
   });
+  describe("GET /api/staff", () => {
+    test("returns a 200 response status with correct data properties", () => {
+      return request(app)
+        .get("/api/staff")
+        .expect(200)
+        .then((response) => {
+          const {
+            body: { staff },
+          } = response;
+          expect(Array.isArray(staff)).toBe(true);
+          staff.forEach((event: Event) => {
+            expect(event).toHaveProperty("staff_id");
+            expect(event).toHaveProperty("first_name");
+            expect(event).toHaveProperty("last_name");
+            expect(event).toHaveProperty("email");
+            expect(event).toHaveProperty("password_hash");
+          });
+        });
+    });
+  });
 });
