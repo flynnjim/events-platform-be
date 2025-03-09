@@ -11,6 +11,7 @@ import {
   getSingleEvent,
   getRegisteredUsers,
   getAllStaff,
+  getSingleStaff,
 } from "./controllers/index.controllers";
 import { errorHandler } from "./middlewares/error-handler.middlewares";
 
@@ -25,6 +26,8 @@ app.get("/api/events/:event_id", getSingleEvent);
 app.get("/api/users/registered/:event_id", getRegisteredUsers);
 
 app.get("/api/staff", getAllStaff);
+
+app.get("/api/staff/:staff_id", getSingleStaff);
 
 app.all("*", (request, response) => {
   response

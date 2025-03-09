@@ -3,7 +3,7 @@ import request from "supertest";
 import db from "../db/connection";
 import seed from "../db/seeds/seed";
 import testData from "../db/data/test-data";
-import { User, Event } from "../types/types";
+import { User, Event, Staff } from "../types/types";
 
 beforeEach(async () => {
   await seed(testData);
@@ -208,13 +208,53 @@ describe("Events Platfomr Backend API", () => {
             body: { staff },
           } = response;
           expect(Array.isArray(staff)).toBe(true);
-          staff.forEach((event: Event) => {
-            expect(event).toHaveProperty("staff_id");
-            expect(event).toHaveProperty("first_name");
-            expect(event).toHaveProperty("last_name");
-            expect(event).toHaveProperty("email");
-            expect(event).toHaveProperty("password_hash");
+          staff.forEach((staff: Staff) => {
+            expect(staff).toHaveProperty("staff_id");
+            expect(staff).toHaveProperty("first_name");
+            expect(staff).toHaveProperty("last_name");
+            expect(staff).toHaveProperty("email");
+            expect(staff).toHaveProperty("password_hash");
           });
+        });
+    });
+  });
+  describe("GET /api/staff/:staff_id", () => {
+    test("returns a 200 response status with correct data properties", () => {
+      return request(app)
+        .get("/api/staff/1")
+        .expect(200)
+        .then((response) => {
+          const {
+            body: { staff },
+          } = response;
+          expect(Array.isArray(staff)).toBe(false);
+          expect(staff).toHaveProperty("staff_id");
+          expect(staff).toHaveProperty("first_name");
+          expect(staff).toHaveProperty("last_name");
+          expect(staff).toHaveProperty("email");
+          expect(staff).toHaveProperty("password_hash");
+        });
+    });
+    test("returns a 400 Bad request when parameter is invalid", () => {
+      return request(app)
+        .get("/api/staff/juan")
+        .expect(400)
+        .then((response) => {
+          const {
+            body: { msg },
+          } = response;
+          expect(msg).toBe("Bad request");
+        });
+    });
+    test("returns a 404 not found when parameter is out of staff_id range", () => {
+      return request(app)
+        .get("/api/staff/99")
+        .expect(404)
+        .then((response) => {
+          const {
+            body: { msg },
+          } = response;
+          expect(msg).toBe("Staff not found");
         });
     });
   });
