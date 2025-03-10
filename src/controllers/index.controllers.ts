@@ -6,6 +6,7 @@ import { getRegisteredUsers } from "./get-registered-users.controllers";
 import { getAllStaff } from "./get-all-staff.controllers";
 import { getSingleStaff } from "./get-single-staff.controllers";
 import { postEvent } from "./post-event.controllers";
+import { patchEvent } from "./patch-event.controllers";
 
 export {
   getUsers,
@@ -16,4 +17,5 @@ export {
   getAllStaff,
   getSingleStaff,
   postEvent,
+  patchEvent,
 };

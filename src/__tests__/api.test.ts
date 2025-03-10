@@ -352,4 +352,103 @@ describe("Events Platfomr Backend API", () => {
         });
     });
   });
+  describe("PATCH /api/events", () => {
+    test("returns event object updated with passed event body information", () => {
+      const body = {
+        event_id: 1,
+        title: "New Tech Horizons 2025",
+        description:
+          "A conference that will discuss where the world of technology is heading",
+        location: { latitude: 37.7749, longitude: -122.4194 },
+        address: "Moscone Center, 747 Howard St, San Francisco, CA 94103, USA",
+        created_by: 1,
+        start_time: 1755277200000,
+        end_time: 1755306000000,
+      };
+      return request(app)
+        .patch("/api/events")
+        .send(body)
+        .expect(200)
+        .then((response) => {
+          const {
+            body: { event },
+          } = response;
+          expect(Array.isArray(event)).toBe(false);
+          expect(event.event_id).toBe(1);
+          expect(event.created_by).toBe(1);
+          expect(event.title).toBe("New Tech Horizons 2025");
+          expect(event.description).toBe(
+            "A conference that will discuss where the world of technology is heading"
+          );
+          expect(event.location).toEqual({
+            latitude: 37.7749,
+            longitude: -122.4194,
+          });
+          expect(new Date(event.start_time)).toBeInstanceOf(Date);
+          expect(new Date(event.end_time)).toBeInstanceOf(Date);
+        });
+    });
+    test("returns a 404 if body contains created_by without corresponding entry", () => {
+      const body = {
+        event_id: 1,
+        title: "New Tech Horizons 2025",
+        description:
+          "A conference that will discuss where the world of technology is heading",
+        location: { latitude: 37.7749, longitude: -122.4194 },
+        address: "Moscone Center, 747 Howard St, San Francisco, CA 94103, USA",
+        created_by: 99,
+        start_time: 1755277200000,
+        end_time: 1755306000000,
+      };
+      return request(app)
+        .patch("/api/events")
+        .send(body)
+        .expect(404)
+        .then((response) => {
+          const {
+            body: { msg },
+          } = response;
+          expect(msg).toEqual("Staff member with ID 99 does not exist.");
+        });
+    });
+    test("returns a 404 if body contains event_id without corresponding entry", () => {
+      const body = {
+        event_id: 99,
+        title: "New Tech Horizons 2025",
+        description:
+          "A conference that will discuss where the world of technology is heading",
+        location: { latitude: 37.7749, longitude: -122.4194 },
+        address: "Moscone Center, 747 Howard St, San Francisco, CA 94103, USA",
+        created_by: 1,
+        start_time: 1755277200000,
+        end_time: 1755306000000,
+      };
+      return request(app)
+        .patch("/api/events")
+        .send(body)
+        .expect(404)
+        .then((response) => {
+          const {
+            body: { msg },
+          } = response;
+          // console.log(body);
+          expect(msg).toEqual("Event with ID 99 not found.");
+        });
+    });
+    test("returns a 400 if body is not in correct format", () => {
+      const body = {
+        writer: "butter_tower",
+        text: "I want more noise!",
+        other: "I enjoyed this!",
+      };
+      return request(app)
+        .patch("/api/events")
+        .send(body)
+        .expect(400)
+        .then((response) => {
+          const { body } = response;
+          expect(body).toEqual({ msg: "Invalid event body" });
+        });
+    });
+  });
 });
