@@ -40,3 +40,36 @@ export interface SeedData {
   staffData: Staff[];
   registrationData: Registration[];
 }
+
+export interface NewEventBody {
+  title: string;
+  description: string;
+  location: { latitude: number; longitude: number };
+  address: string;
+  start_time: number;
+  end_time: number;
+}
+
+export type InsertEventBody = [
+  string,
+  string,
+  { latitude: number; longitude: number },
+  string,
+  number,
+  string,
+  string
+];
+
+export const isValidNewEventBody = (body: any): body is NewEventBody => {
+  return (
+    typeof body.title === "string" &&
+    typeof body.description === "string" &&
+    typeof body.address === "string" &&
+    typeof body.start_time === "number" &&
+    typeof body.end_time === "number" &&
+    typeof body.location === "object" &&
+    body.location !== null &&
+    typeof body.location.latitude === "number" &&
+    typeof body.location.longitude === "number"
+  );
+};
