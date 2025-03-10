@@ -73,3 +73,17 @@ export const isValidNewEventBody = (body: any): body is NewEventBody => {
     typeof body.location.longitude === "number"
   );
 };
+
+export const isValidEventPatch = (body: any): body is Event => {
+  return (
+    typeof body.title === "string" &&
+    typeof body.description === "string" &&
+    typeof body.address === "string" &&
+    typeof body.start_time === "number" &&
+    typeof body.end_time === "number" &&
+    typeof body.location === "object" &&
+    body.location !== null &&
+    typeof body.location.latitude === "number" &&
+    typeof body.location.longitude === "number"
+  );
+};
