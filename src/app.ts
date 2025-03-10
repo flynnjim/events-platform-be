@@ -12,6 +12,7 @@ import {
   getRegisteredUsers,
   getAllStaff,
   getSingleStaff,
+  postEvent,
 } from "./controllers/index.controllers";
 import { errorHandler } from "./middlewares/error-handler.middlewares";
 
@@ -28,6 +29,8 @@ app.get("/api/users/registered/:event_id", getRegisteredUsers);
 app.get("/api/staff", getAllStaff);
 
 app.get("/api/staff/:staff_id", getSingleStaff);
+
+app.post("/api/events/:created_by", postEvent);
 
 app.all("*", (request, response) => {
   response
