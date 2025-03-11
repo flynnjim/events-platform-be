@@ -22,7 +22,7 @@ export interface Registration {
   registration_id: number;
   user_id: number;
   event_id: number;
-  registration_date: Date;
+  registration_date: number;
   status: "Confirmed" | "Cancelled";
 }
 
@@ -60,6 +60,8 @@ export type InsertEventBody = [
   string
 ];
 
+export type InsertRegistrationBody = [number, number, Date, string];
+
 export const isValidNewEventBody = (body: any): body is NewEventBody => {
   return (
     typeof body.title === "string" &&
@@ -85,5 +87,14 @@ export const isValidEventPatch = (body: any): body is Event => {
     body.location !== null &&
     typeof body.location.latitude === "number" &&
     typeof body.location.longitude === "number"
+  );
+};
+
+export const isValidRegistrationBody = (body: any): body is Registration => {
+  return (
+    typeof body.user_id === "number" &&
+    typeof body.event_id === "number" &&
+    typeof body.registration_date === "number" &&
+    typeof body.status === "string"
   );
 };

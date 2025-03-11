@@ -451,4 +451,80 @@ describe("Events Platfomr Backend API", () => {
         });
     });
   });
+  describe("POST /api/registration", () => {
+    test("returns 201 status code and an object with event added", () => {
+      const body = {
+        user_id: 2,
+        event_id: 2,
+        registration_date: 1767266400000,
+        status: "Confirmed",
+      };
+      return request(app)
+        .post("/api/registration")
+        .send(body)
+        .expect(201)
+        .then((response) => {
+          const {
+            body: { registration },
+          } = response;
+          expect(Array.isArray(registration)).toBe(false);
+          expect(registration.registration_id).toBe(6);
+          expect(registration.user_id).toBe(2);
+          expect(registration.event_id).toBe(2);
+          expect(new Date(registration.registration_date)).toBeInstanceOf(Date);
+          expect(registration.status).toBe("Confirmed");
+        });
+    });
+    test("returns a 404 if body contains user_id without corresponding entry", () => {
+      const body = {
+        user_id: 99,
+        event_id: 2,
+        registration_date: 1767266400000,
+        status: "Confirmed",
+      };
+      return request(app)
+        .post("/api/registration")
+        .send(body)
+        .expect(404)
+        .then((response) => {
+          const {
+            body: { msg },
+          } = response;
+          expect(msg).toEqual("User with ID 99 does not exist.");
+        });
+    });
+    test("returns a 400 if body is not in correct format", () => {
+      const body = {
+        writer: "butter_tower",
+        text: "I want more noise!",
+        other: "I enjoyed this!",
+      };
+      return request(app)
+        .post("/api/registration")
+        .send(body)
+        .expect(400)
+        .then((response) => {
+          const { body } = response;
+          expect(body).toEqual({ msg: "Invalid registration body" });
+        });
+    });
+    test("returns a 400 if created_by is not valid number", () => {
+      const body = {
+        user_id: "ninety nine",
+        event_id: "twelve",
+        registration_date: 1767266400000,
+        status: "Confirmed",
+      };
+      return request(app)
+        .post("/api/registration")
+        .send(body)
+        .expect(400)
+        .then((response) => {
+          const {
+            body: { msg },
+          } = response;
+          expect(msg).toEqual("Invalid registration body");
+        });
+    });
+  });
 });
