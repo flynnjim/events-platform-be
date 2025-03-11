@@ -431,7 +431,6 @@ describe("Events Platfomr Backend API", () => {
           const {
             body: { msg },
           } = response;
-          // console.log(body);
           expect(msg).toEqual("Event with ID 99 not found.");
         });
     });
@@ -524,6 +523,59 @@ describe("Events Platfomr Backend API", () => {
             body: { msg },
           } = response;
           expect(msg).toEqual("Invalid registration body");
+        });
+    });
+  });
+  describe("PATCH /api/registration", () => {
+    test("returns registration object updated with passed event body information", () => {
+      const body = {
+        registration_id: 1,
+        status: "Cancelled",
+      };
+      return request(app)
+        .patch("/api/registration")
+        .send(body)
+        .expect(200)
+        .then((response) => {
+          const {
+            body: { registration },
+          } = response;
+          expect(Array.isArray(registration)).toBe(false);
+          expect(registration.registration_id).toBe(1);
+          expect(registration.user_id).toBe(3);
+          expect(registration.event_id).toBe(1);
+          expect(registration.status).toBe("Cancelled");
+        });
+    });
+    test("returns a 404 if body contains user_id without corresponding entry", () => {
+      const body = {
+        registration_id: 99,
+        status: "Cancelled",
+      };
+      return request(app)
+        .patch("/api/registration")
+        .send(body)
+        .expect(404)
+        .then((response) => {
+          const {
+            body: { msg },
+          } = response;
+          expect(msg).toEqual("Registration with ID 99 not found.");
+        });
+    });
+    test("returns a 400 if body is not in correct format", () => {
+      const body = {
+        writer: "butter_tower",
+        text: "I want more noise!",
+        other: "I enjoyed this!",
+      };
+      return request(app)
+        .patch("/api/registration")
+        .send(body)
+        .expect(400)
+        .then((response) => {
+          const { body } = response;
+          expect(body).toEqual({ msg: "Invalid registration body" });
         });
     });
   });
