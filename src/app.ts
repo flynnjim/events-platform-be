@@ -14,6 +14,7 @@ import {
   getSingleStaff,
   postEvent,
   patchEvent,
+  postRegistration,
 } from "./controllers/index.controllers";
 import { errorHandler } from "./middlewares/error-handler.middlewares";
 
@@ -34,6 +35,8 @@ app.get("/api/staff/:staff_id", getSingleStaff);
 app.post("/api/events/:created_by", postEvent);
 
 app.patch("/api/events", patchEvent);
+
+app.post("/api/registration", postRegistration);
 
 app.all("*", (request, response) => {
   response

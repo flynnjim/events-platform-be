@@ -2,7 +2,10 @@ import format from "pg-format";
 import db from "../connection";
 
 import { SeedData } from "../../types/types";
-import { convertTimestampToDate } from "./utils";
+import {
+  convertTimestampToDate,
+  convertRegistrationTimestampToDate,
+} from "./utils";
 
 const seed = async ({
   eventData,
@@ -104,12 +107,16 @@ const seed = async ({
 
   const insertRegistrationQuery = format(
     `INSERT INTO registration (user_id, event_id, registration_date, status) VALUES %L RETURNING *;`,
-    registrationData.map(({ user_id, event_id, registration_date, status }) => [
-      user_id,
-      event_id,
-      registration_date,
-      status,
-    ])
+    registrationData.map((registration) => {
+      const convertedRegistration =
+        convertRegistrationTimestampToDate(registration);
+      return [
+        convertedRegistration.user_id,
+        convertedRegistration.event_id,
+        convertedRegistration.registration_date,
+        convertedRegistration.status,
+      ];
+    })
   );
   await db.query(insertRegistrationQuery);
 };
