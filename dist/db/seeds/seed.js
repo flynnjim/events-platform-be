@@ -88,12 +88,15 @@ const seed = (_a) => __awaiter(void 0, [_a], void 0, function* ({ eventData, use
         ];
     }));
     yield connection_1.default.query(insertEventsQuery);
-    const insertRegistrationQuery = (0, pg_format_1.default)(`INSERT INTO registration (user_id, event_id, registration_date, status) VALUES %L RETURNING *;`, registrationData.map(({ user_id, event_id, registration_date, status }) => [
-        user_id,
-        event_id,
-        registration_date,
-        status,
-    ]));
+    const insertRegistrationQuery = (0, pg_format_1.default)(`INSERT INTO registration (user_id, event_id, registration_date, status) VALUES %L RETURNING *;`, registrationData.map((registration) => {
+        const convertedRegistration = (0, utils_1.convertRegistrationTimestampToDate)(registration);
+        return [
+            convertedRegistration.user_id,
+            convertedRegistration.event_id,
+            convertedRegistration.registration_date,
+            convertedRegistration.status,
+        ];
+    }));
     yield connection_1.default.query(insertRegistrationQuery);
 });
 exports.default = seed;
