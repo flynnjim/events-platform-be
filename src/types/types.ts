@@ -98,3 +98,9 @@ export const isValidRegistrationBody = (body: any): body is Registration => {
     typeof body.status === "string"
   );
 };
+
+export const isValidRegistrationPatch = (body: any): body is Registration => {
+  return (
+    typeof body.registration_id === "number" && typeof body.status === "string"
+  );
+};
