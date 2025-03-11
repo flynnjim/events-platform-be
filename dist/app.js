@@ -16,6 +16,12 @@ app.get("/api/events", index_controllers_1.getAllEvents);
 app.get("/api/events/:event_id", index_controllers_1.getSingleEvent);
 app.get("/api/users/registered/:event_id", index_controllers_1.getRegisteredUsers);
 app.get("/api/staff", index_controllers_1.getAllStaff);
+app.get("/api/staff/:staff_id", index_controllers_1.getSingleStaff);
+app.post("/api/events/:created_by", index_controllers_1.postEvent);
+app.patch("/api/events", index_controllers_1.patchEvent);
+app.post("/api/registration", index_controllers_1.postRegistration);
+app.patch("/api/registration", index_controllers_1.patchRegistration);
+app.get("/api", index_controllers_1.getDocumentation);
 app.all("*", (request, response) => {
     response
         .status(404)

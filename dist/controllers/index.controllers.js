@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getAllStaff = exports.getRegisteredUsers = exports.getSingleEvent = exports.getAllEvents = exports.getSingleUser = exports.getUsers = void 0;
+exports.getDocumentation = exports.patchRegistration = exports.postRegistration = exports.patchEvent = exports.postEvent = exports.getSingleStaff = exports.getAllStaff = exports.getRegisteredUsers = exports.getSingleEvent = exports.getAllEvents = exports.getSingleUser = exports.getUsers = void 0;
 const get_all_users_controllers_1 = require("./get-all-users.controllers");
 Object.defineProperty(exports, "getUsers", { enumerable: true, get: function () { return get_all_users_controllers_1.getUsers; } });
 const get_single_user_controllers_1 = require("./get-single-user.controllers");
@@ -13,3 +13,15 @@ const get_registered_users_controllers_1 = require("./get-registered-users.contr
 Object.defineProperty(exports, "getRegisteredUsers", { enumerable: true, get: function () { return get_registered_users_controllers_1.getRegisteredUsers; } });
 const get_all_staff_controllers_1 = require("./get-all-staff.controllers");
 Object.defineProperty(exports, "getAllStaff", { enumerable: true, get: function () { return get_all_staff_controllers_1.getAllStaff; } });
+const get_single_staff_controllers_1 = require("./get-single-staff.controllers");
+Object.defineProperty(exports, "getSingleStaff", { enumerable: true, get: function () { return get_single_staff_controllers_1.getSingleStaff; } });
+const post_event_controllers_1 = require("./post-event.controllers");
+Object.defineProperty(exports, "postEvent", { enumerable: true, get: function () { return post_event_controllers_1.postEvent; } });
+const patch_event_controllers_1 = require("./patch-event.controllers");
+Object.defineProperty(exports, "patchEvent", { enumerable: true, get: function () { return patch_event_controllers_1.patchEvent; } });
+const post_registration_controllers_1 = require("./post-registration.controllers");
+Object.defineProperty(exports, "postRegistration", { enumerable: true, get: function () { return post_registration_controllers_1.postRegistration; } });
+const patch_registration_controllers_1 = require("./patch-registration.controllers");
+Object.defineProperty(exports, "patchRegistration", { enumerable: true, get: function () { return patch_registration_controllers_1.patchRegistration; } });
+const get_documentation_controllers_1 = require("./get-documentation.controllers");
+Object.defineProperty(exports, "getDocumentation", { enumerable: true, get: function () { return get_documentation_controllers_1.getDocumentation; } });
