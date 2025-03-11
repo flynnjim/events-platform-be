@@ -9,6 +9,7 @@ import { postEvent } from "./post-event.controllers";
 import { patchEvent } from "./patch-event.controllers";
 import { postRegistration } from "./post-registration.controllers";
 import { patchRegistration } from "./patch-registration.controllers";
+import { getDocumentation } from "./get-documentation.controllers";
 
 export {
   getUsers,
@@ -22,4 +23,5 @@ export {
   patchEvent,
   postRegistration,
   patchRegistration,
+  getDocumentation,
 };

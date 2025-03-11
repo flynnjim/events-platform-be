@@ -1,0 +1,163 @@
+{
+  "GET /api": {
+    "description": "serves up a json representation of all the available endpoints of the api"
+  },
+  "GET /api/users": {
+    "description": "serves up an array of all users",
+    "queries": [],
+    "exampleResponse": {
+      "topics": [
+        {
+          "user_id": 1,
+          "username": "tech_guru",
+          "first_name": "Alice",
+          "last_name": "Johnson",
+          "email": "alice.johnson@example.com",
+          "password_hash": "$2b$10$abcdefghijklmnopqrstuv"
+        }
+      ]
+    }
+  },
+  "GET /api/users/:user_id": {
+    "description": "serves up single user by user_id",
+    "queries": [],
+    "exampleResponse": {
+      "topics": {
+        "user_id": 1,
+        "username": "tech_guru",
+        "first_name": "Alice",
+        "last_name": "Johnson",
+        "email": "alice.johnson@example.com",
+        "password_hash": "$2b$10$abcdefghijklmnopqrstuv"
+      }
+    }
+  },
+  "GET /api/events": {
+    "description": "serves up an array of all events",
+    "queries": [],
+    "exampleResponse": {
+      "topics": [
+        {
+          "event_id": 1,
+          "title": "Tech Conference 2025",
+          "description": "A conference discussing the latest trends in technology and software development.",
+          "location": { "latitude": 37.7749, "longitude": -122.4194 },
+          "address": "Moscone Center, 747 Howard St, San Francisco, CA 94103, USA",
+          "created_by": 2,
+          "start_time": 1755277200000,
+          "end_time": 1755306000000
+        }
+      ]
+    }
+  },
+  "GET /api/events/:event_id": {
+    "description": "serves up single event by event_id",
+    "queries": [],
+    "exampleResponse": {
+      "topics": {
+        "event_id": 1,
+        "title": "Tech Conference 2025",
+        "description": "A conference discussing the latest trends in technology and software development.",
+        "location": { "latitude": 37.7749, "longitude": -122.4194 },
+        "address": "Moscone Center, 747 Howard St, San Francisco, CA 94103, USA",
+        "created_by": 2,
+        "start_time": 1755277200000,
+        "end_time": 1755306000000
+      }
+    }
+  },
+  "GET /api/users/registered/:event_id": {
+    "description": "serves up all registered users event_id",
+    "queries": [],
+    "exampleResponse": {
+      "topics": [
+        {
+          "user_id": 1,
+          "username": "tech_guru",
+          "first_name": "Alice",
+          "last_name": "Johnson",
+          "email": "alice.johnson@example.com",
+          "password_hash": "$2b$10$abcdefghijklmnopqrstuv"
+        }
+      ]
+    }
+  },
+  "GET /api/staff": {
+    "description": "serves up an array of all staff",
+    "queries": [],
+    "exampleResponse": {
+      "topics": [
+        {
+          "staff_id": 1,
+          "first_name": "Liam",
+          "last_name": "Parker",
+          "email": "liam.parker@company.com",
+          "password_hash": "$2b$10$abcdefg12345678zxyTkjL6/2z5wD5U8Xp/a9rHg"
+        }
+      ]
+    }
+  },
+  "GET /api/staff/:staff_id": {
+    "description": "serves up singel staff object by staff_id",
+    "queries": [],
+    "exampleResponse": {
+      "topics": {
+        "staff_id": 1,
+        "first_name": "Liam",
+        "last_name": "Parker",
+        "email": "liam.parker@company.com",
+        "password_hash": "$2b$10$abcdefg12345678zxyTkjL6/2z5wD5U8Xp/a9rHg"
+      }
+    }
+  },
+  "POST /api/events/:created_by": {
+    "description": "adds an event and returns event object",
+    "queries": [],
+    "exampleResponse": {
+      "event_id": 1,
+      "title": "Tech Conference 2025",
+      "description": "A conference discussing the latest trends in technology and software development.",
+      "location": { "latitude": 37.7749, "longitude": -122.4194 },
+      "address": "Moscone Center, 747 Howard St, San Francisco, CA 94103, USA",
+      "created_by": 2,
+      "start_time": 1755277200000,
+      "end_time": 1755306000000
+    }
+  },
+  "PATCH /api/events": {
+    "description": "Updates an event and returns event object",
+    "queries": [],
+    "exampleResponse": {
+      "event_id": 1,
+      "title": "Tech Conference 2025",
+      "description": "A conference discussing the latest trends in technology and software development.",
+      "location": { "latitude": 37.7749, "longitude": -122.4194 },
+      "address": "Moscone Center, 747 Howard St, San Francisco, CA 94103, USA",
+      "created_by": 2,
+      "start_time": 1755277200000,
+      "end_time": 1755306000000
+    }
+  },
+  "POST /api/registration": {
+    "description": "Adds a user registration to event and returns registration objet",
+    "queries": [],
+    "exampleResponse": {
+      "registration_id": 1,
+      "user_id": 3,
+      "event_id": 1,
+      "registration_date": 1746093600000,
+      "status": "Confirmed"
+    }
+  },
+  "PATCH /api/registration": {
+    "description": "Updates a user registration to event and returns registration objet",
+    "queries": [],
+    "exampleResponse": {
+      "registration_id": 1,
+      "user_id": 3,
+      "event_id": 1,
+      "registration_date": 1746093600000,
+      "status": "Confirmed"
+    }
+  }
+}

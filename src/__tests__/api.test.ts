@@ -266,7 +266,6 @@ describe("Events Platfomr Backend API", () => {
           "A conference that will discuss where the world of technology is heading",
         location: { latitude: 37.7749, longitude: -122.4194 },
         address: "Moscone Center, 747 Howard St, San Francisco, CA 94103, USA",
-        // created_by: 1,
         start_time: 1755277200000,
         end_time: 1755306000000,
       };
@@ -300,7 +299,6 @@ describe("Events Platfomr Backend API", () => {
           "A conference that will discuss where the world of technology is heading",
         location: { latitude: 37.7749, longitude: -122.4194 },
         address: "Moscone Center, 747 Howard St, San Francisco, CA 94103, USA",
-        // created_by: 1,
         start_time: 1755277200000,
         end_time: 1755306000000,
       };
@@ -576,6 +574,22 @@ describe("Events Platfomr Backend API", () => {
         .then((response) => {
           const { body } = response;
           expect(body).toEqual({ msg: "Invalid registration body" });
+        });
+    });
+  });
+  describe("GET /api that returns documentation of available api endpoints", () => {
+    test("returns documentation with the expected properties", () => {
+      return request(app)
+        .get("/api")
+        .expect(200)
+        .then((response) => {
+          const { body } = response;
+          expect(typeof body).toBe("object");
+          const objectKeys = Object.keys(body);
+          expect(objectKeys.includes("GET /api")).toBe(true);
+          expect(objectKeys.includes("GET /api/users")).toBe(true);
+          expect(objectKeys.includes("GET /api/staff")).toBe(true);
+          expect(objectKeys.includes("GET /api/events")).toBe(true);
         });
     });
   });
