@@ -44,6 +44,7 @@ const seed = (_a) => __awaiter(void 0, [_a], void 0, function* ({ eventData, use
       event_id SERIAL PRIMARY KEY,
       title VARCHAR NOT NULL,
       description VARCHAR NOT NULL,
+      details VARCHAR(5000) NOT NULL,
       location JSONB NOT NULL,
       address VARCHAR NOT NULL,
       created_by INT REFERENCES staff(staff_id),
@@ -75,11 +76,12 @@ const seed = (_a) => __awaiter(void 0, [_a], void 0, function* ({ eventData, use
         password_hash,
     ]));
     yield connection_1.default.query(insertStaffQuery);
-    const insertEventsQuery = (0, pg_format_1.default)(`INSERT INTO events (title, description, location, address, created_by, start_time, end_time) VALUES %L RETURNING *;`, eventData.map((event) => {
+    const insertEventsQuery = (0, pg_format_1.default)(`INSERT INTO events (title, description, details, location, address, created_by, start_time, end_time) VALUES %L RETURNING *;`, eventData.map((event) => {
         const convertedEvent = (0, utils_1.convertTimestampToDate)(event);
         return [
             convertedEvent.title,
             convertedEvent.description,
+            convertedEvent.details,
             JSON.stringify(convertedEvent.location),
             convertedEvent.address,
             convertedEvent.created_by,

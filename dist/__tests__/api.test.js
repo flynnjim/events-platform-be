@@ -99,6 +99,7 @@ describe("Events Platfomr Backend API", () => {
                     expect(event).toHaveProperty("event_id");
                     expect(event).toHaveProperty("title");
                     expect(event).toHaveProperty("description");
+                    expect(event).toHaveProperty("details");
                     expect(event).toHaveProperty("location");
                     expect(event).toHaveProperty("created_by");
                     expect(event).toHaveProperty("start_time");
@@ -116,6 +117,8 @@ describe("Events Platfomr Backend API", () => {
                 const { body: { event }, } = response;
                 expect(Array.isArray(event)).toBe(false);
                 expect(event.event_id).toBe(1);
+                expect(event).toHaveProperty("details");
+                expect(event.details).toBe("Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?");
                 expect(event.description).toBe("A conference discussing the latest trends in technology and software development.");
                 expect(event.location).toEqual({
                     latitude: 37.7749,
@@ -237,6 +240,7 @@ describe("Events Platfomr Backend API", () => {
             const body = {
                 title: "New Tech Horizons 2025",
                 description: "A conference that will discuss where the world of technology is heading",
+                details: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
                 location: { latitude: 37.7749, longitude: -122.4194 },
                 address: "Moscone Center, 747 Howard St, San Francisco, CA 94103, USA",
                 start_time: 1755277200000,
@@ -253,6 +257,8 @@ describe("Events Platfomr Backend API", () => {
                 expect(event.created_by).toBe(1);
                 expect(event.title).toBe("New Tech Horizons 2025");
                 expect(event.description).toBe("A conference that will discuss where the world of technology is heading");
+                expect(event).toHaveProperty("details");
+                expect(event.details).toBe("Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?");
                 expect(event.location).toEqual({
                     latitude: 37.7749,
                     longitude: -122.4194,
@@ -265,6 +271,7 @@ describe("Events Platfomr Backend API", () => {
             const body = {
                 title: "New Tech Horizons 2025",
                 description: "A conference that will discuss where the world of technology is heading",
+                details: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
                 location: { latitude: 37.7749, longitude: -122.4194 },
                 address: "Moscone Center, 747 Howard St, San Francisco, CA 94103, USA",
                 start_time: 1755277200000,
@@ -298,6 +305,7 @@ describe("Events Platfomr Backend API", () => {
             const body = {
                 title: "New Tech Horizons 2025",
                 description: "A conference that will discuss where the world of technology is heading",
+                details: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
                 location: { latitude: 37.7749, longitude: -122.4194 },
                 address: "Moscone Center, 747 Howard St, San Francisco, CA 94103, USA",
                 start_time: 1755277200000,
@@ -319,6 +327,7 @@ describe("Events Platfomr Backend API", () => {
                 event_id: 1,
                 title: "New Tech Horizons 2025",
                 description: "A conference that will discuss where the world of technology is heading",
+                details: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
                 location: { latitude: 37.7749, longitude: -122.4194 },
                 address: "Moscone Center, 747 Howard St, San Francisco, CA 94103, USA",
                 created_by: 1,
@@ -336,6 +345,8 @@ describe("Events Platfomr Backend API", () => {
                 expect(event.created_by).toBe(1);
                 expect(event.title).toBe("New Tech Horizons 2025");
                 expect(event.description).toBe("A conference that will discuss where the world of technology is heading");
+                expect(event).toHaveProperty("details");
+                expect(event.details).toBe("Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?");
                 expect(event.location).toEqual({
                     latitude: 37.7749,
                     longitude: -122.4194,
@@ -349,6 +360,7 @@ describe("Events Platfomr Backend API", () => {
                 event_id: 1,
                 title: "New Tech Horizons 2025",
                 description: "A conference that will discuss where the world of technology is heading",
+                details: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
                 location: { latitude: 37.7749, longitude: -122.4194 },
                 address: "Moscone Center, 747 Howard St, San Francisco, CA 94103, USA",
                 created_by: 99,
@@ -369,6 +381,7 @@ describe("Events Platfomr Backend API", () => {
                 event_id: 99,
                 title: "New Tech Horizons 2025",
                 description: "A conference that will discuss where the world of technology is heading",
+                details: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
                 location: { latitude: 37.7749, longitude: -122.4194 },
                 address: "Moscone Center, 747 Howard St, San Francisco, CA 94103, USA",
                 created_by: 1,
