@@ -15,7 +15,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.selectAllEvents = void 0;
 const connection_1 = __importDefault(require("../db/connection"));
 const selectAllEvents = () => __awaiter(void 0, void 0, void 0, function* () {
-    const { rows } = yield connection_1.default.query("SELECT event_id, title, description, location, address, created_by, start_time, end_time FROM events");
+    const { rows } = yield connection_1.default.query("SELECT event_id, title, description, details, location, address, created_by, start_time, end_time FROM events");
     return rows;
 });
 exports.selectAllEvents = selectAllEvents;
