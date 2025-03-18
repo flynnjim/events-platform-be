@@ -44,6 +44,7 @@ const seed = async ({
       event_id SERIAL PRIMARY KEY,
       title VARCHAR NOT NULL,
       description VARCHAR NOT NULL,
+      event_type VARCHAR NOT NULL,
       details VARCHAR(5000) NOT NULL,
       location JSONB NOT NULL,
       address VARCHAR NOT NULL,
@@ -89,12 +90,13 @@ const seed = async ({
   await db.query(insertStaffQuery);
 
   const insertEventsQuery = format(
-    `INSERT INTO events (title, description, details, location, address, created_by, start_time, end_time) VALUES %L RETURNING *;`,
+    `INSERT INTO events (title, description, event_type, details, location, address, created_by, start_time, end_time) VALUES %L RETURNING *;`,
     eventData.map((event) => {
       const convertedEvent = convertTimestampToDate(event);
       return [
         convertedEvent.title,
         convertedEvent.description,
+        convertedEvent.event_type,
         convertedEvent.details,
         JSON.stringify(convertedEvent.location),
         convertedEvent.address,

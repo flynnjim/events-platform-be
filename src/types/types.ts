@@ -11,6 +11,7 @@ export interface Event {
   event_id: number;
   title: string;
   description: string;
+  event_type: string;
   details: string;
   location: { latitude: number; longitude: number };
   address: string;
@@ -45,6 +46,7 @@ export interface SeedData {
 export interface NewEventBody {
   title: string;
   description: string;
+  event_type: string;
   details: string;
   location: { latitude: number; longitude: number };
   address: string;
@@ -56,6 +58,7 @@ export type InsertEventBody = [
   string,
   string,
   string,
+  string,
   { latitude: number; longitude: number },
   string,
   number,
@@ -64,6 +67,7 @@ export type InsertEventBody = [
 ];
 
 export type PatchEventBody = [
+  string,
   string,
   string,
   string,
@@ -81,6 +85,7 @@ export const isValidNewEventBody = (body: any): body is NewEventBody => {
   return (
     typeof body.title === "string" &&
     typeof body.description === "string" &&
+    typeof body.event_type === "string" &&
     typeof body.details === "string" &&
     typeof body.address === "string" &&
     typeof body.start_time === "number" &&
@@ -96,6 +101,7 @@ export const isValidEventPatch = (body: any): body is Event => {
   return (
     typeof body.title === "string" &&
     typeof body.description === "string" &&
+    typeof body.event_type === "string" &&
     typeof body.details === "string" &&
     typeof body.address === "string" &&
     typeof body.start_time === "number" &&

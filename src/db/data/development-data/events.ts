@@ -5,6 +5,7 @@ const eventData: Event[] = [
     title: "Nottingham Tech Conference 2025",
     description:
       "A conference discussing the latest trends in technology and software development, with industry leaders sharing their expertise.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -19,6 +20,7 @@ const eventData: Event[] = [
     title: "Nottingham Coding Bootcamp 2025",
     description:
       "An immersive bootcamp for aspiring developers, covering web development, algorithms, and data structures.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -33,6 +35,7 @@ const eventData: Event[] = [
     title: "Nottingham Startup Expo 2025",
     description:
       "A networking event for entrepreneurs and startups, showcasing innovative businesses and investment opportunities.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -47,6 +50,7 @@ const eventData: Event[] = [
     title: "Artificial Intelligence Workshop - Nottingham",
     description:
       "A hands-on workshop for AI enthusiasts, covering the basics of machine learning and its real-world applications.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -61,6 +65,7 @@ const eventData: Event[] = [
     title: "Nottingham Web Development Meetup",
     description:
       "A casual meetup for web developers to share ideas, talk about trends, and collaborate on new projects.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -74,6 +79,7 @@ const eventData: Event[] = [
     title: "Nottingham Cybersecurity Conference 2025",
     description:
       "A conference focusing on the latest cybersecurity threats and solutions, with industry experts sharing their insights.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -88,6 +94,7 @@ const eventData: Event[] = [
     title: "Nottingham Game Developers Meetup",
     description:
       "A monthly meetup for game developers to discuss new tools, trends, and showcase their work.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -102,6 +109,7 @@ const eventData: Event[] = [
     title: "Nottingham Blockchain Summit 2025",
     description:
       "A conference bringing together blockchain enthusiasts and professionals to explore the latest trends in decentralized technologies.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -115,6 +123,7 @@ const eventData: Event[] = [
     title: "Nottingham AI & Robotics Expo",
     description:
       "A global exhibition of the latest advancements in AI and robotics, featuring workshops, demos, and industry leaders.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -129,6 +138,7 @@ const eventData: Event[] = [
     title: "Nottingham Digital Marketing Conference",
     description:
       "An event for marketers to explore the future of digital marketing, with sessions on SEO, content, and social media strategies.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -142,6 +152,7 @@ const eventData: Event[] = [
     title: "Nottingham Tech Job Fair 2025",
     description:
       "A job fair focused on the technology sector, bringing top companies together to meet potential candidates for various roles.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -155,6 +166,7 @@ const eventData: Event[] = [
     title: "Nottingham JavaScript Developers Meetup",
     description:
       "Join fellow JavaScript developers to learn new frameworks, tools, and best practices for the modern web.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -168,6 +180,7 @@ const eventData: Event[] = [
     title: "Nottingham Startup Accelerator Pitch Day",
     description:
       "An event for startups in the region to pitch their businesses to a panel of investors and industry professionals.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -181,6 +194,7 @@ const eventData: Event[] = [
     title: "Nottingham UX/UI Design Workshop",
     description:
       "A hands-on workshop for UX/UI designers to learn the latest techniques in design thinking and user-centered design.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -194,6 +208,7 @@ const eventData: Event[] = [
     title: "Nottingham Python Programming Meetup",
     description:
       "A meetup for Python developers to discuss new libraries, frameworks, and tips for writing efficient Python code.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -207,6 +222,7 @@ const eventData: Event[] = [
     title: "Nottingham Cloud Computing Conference",
     description:
       "A conference focusing on cloud technology, with sessions on cloud infrastructure, DevOps, and distributed systems.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -220,6 +236,7 @@ const eventData: Event[] = [
     title: "Nottingham Tech Innovations Summit",
     description:
       "A summit dedicated to exploring the latest tech innovations, from AI to smart cities, featuring talks from top innovators.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -234,6 +251,7 @@ const eventData: Event[] = [
     title: "Nottingham Digital Art Exhibition 2025",
     description:
       "An exhibition showcasing the intersection of digital technology and art, featuring local and international digital artists.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -247,6 +265,7 @@ const eventData: Event[] = [
     title: "Nottingham Data Science Conference",
     description:
       "A conference for data scientists and analysts to discuss the future of data analysis, machine learning, and predictive analytics.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -261,6 +280,7 @@ const eventData: Event[] = [
     title: "Nottingham Data Engineering Meetup",
     description:
       "A meetup for data engineers to share their experiences, tools, and methodologies for managing large-scale data systems.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -274,6 +294,7 @@ const eventData: Event[] = [
     title: "Nottingham Digital Design Hackathon",
     description:
       "A 24-hour event where designers and developers come together to create innovative digital projects.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -287,6 +308,7 @@ const eventData: Event[] = [
     title: "Nottingham Mobile App Development Workshop",
     description:
       "A workshop teaching the fundamentals of mobile app development, covering both Android and iOS platforms.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -300,6 +322,7 @@ const eventData: Event[] = [
     title: "Nottingham eSports Tournament 2025",
     description:
       "An exciting eSports tournament bringing competitive gaming to Nottingham with cash prizes and a live audience.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -313,6 +336,7 @@ const eventData: Event[] = [
     title: "Nottingham Tech For Good Conference",
     description:
       "A conference dedicated to using technology for social impact, featuring talks on tech for education, healthcare, and sustainability.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -326,6 +350,7 @@ const eventData: Event[] = [
     title: "Nottingham Digital Transformation Summit",
     description:
       "A summit focused on how businesses can implement digital transformation to optimize processes and customer engagement.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -339,6 +364,7 @@ const eventData: Event[] = [
     title: "Nottingham Data Visualization Workshop",
     description:
       "A hands-on workshop focused on creating impactful data visualizations, from charts to interactive dashboards.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -352,6 +378,7 @@ const eventData: Event[] = [
     title: "Nottingham Social Media Marketing Summit",
     description:
       "An event for businesses and marketers to learn about social media strategies, influencer marketing, and content creation.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -365,6 +392,7 @@ const eventData: Event[] = [
     title: "Nottingham Digital Product Design Expo",
     description:
       "An exhibition showcasing the latest trends in product design, from UI/UX to industrial design, with interactive demos.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -378,6 +406,7 @@ const eventData: Event[] = [
     title: "Nottingham Developer & Designer Mixer",
     description:
       "A networking event for developers and designers to meet, collaborate, and create new ideas and projects together.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -391,6 +420,7 @@ const eventData: Event[] = [
     title: "Nottingham Virtual Reality Conference",
     description:
       "A conference exploring the future of virtual reality, from gaming to healthcare applications, with live demonstrations.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -404,6 +434,7 @@ const eventData: Event[] = [
     title: "Nottingham Digital Content Summit",
     description:
       "A summit for digital content creators to discuss trends in video production, blogging, and social media content.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -417,6 +448,7 @@ const eventData: Event[] = [
     title: "Nottingham IoT Expo 2025",
     description:
       "An exhibition showcasing Internet of Things technologies, with solutions for smart homes, cities, and industrial automation.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -430,6 +462,7 @@ const eventData: Event[] = [
     title: "Nottingham Digital Journalism Summit",
     description:
       "A summit for journalists to explore digital journalism trends, including storytelling, multimedia, and audience engagement.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -443,6 +476,7 @@ const eventData: Event[] = [
     title: "Nottingham Tech and Innovation Awards 2025",
     description:
       "A prestigious awards ceremony honoring the best of Nottingham's tech and innovation scene, from startups to industry giants.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -456,6 +490,7 @@ const eventData: Event[] = [
     title: "Nottingham Digital Film Festival",
     description:
       "A film festival showcasing digital films and video projects, with screenings, Q&As, and workshops for filmmakers.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -469,6 +504,7 @@ const eventData: Event[] = [
     title: "Nottingham Tech Industry Networking Event",
     description:
       "A networking event for tech professionals, offering the chance to meet with industry leaders and discuss business trends.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -482,6 +518,7 @@ const eventData: Event[] = [
     title: "Nottingham IoT Developer Meetup",
     description:
       "A meetup for developers working on Internet of Things projects, sharing ideas, experiences, and innovations in IoT technology.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -495,6 +532,7 @@ const eventData: Event[] = [
     title: "Nottingham Social Innovation Summit",
     description:
       "A summit that brings together social innovators to discuss the future of socially-driven tech solutions.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -508,6 +546,7 @@ const eventData: Event[] = [
     title: "Nottingham Code for Good Hackathon",
     description:
       "A hackathon where developers come together to build technology solutions for social good.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -521,6 +560,7 @@ const eventData: Event[] = [
     title: "Nottingham Digital Innovation Forum",
     description:
       "A forum for discussing how digital innovations are shaping various industries, from healthcare to education.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -534,6 +574,7 @@ const eventData: Event[] = [
     title: "Nottingham Digital Marketing Bootcamp",
     description:
       "A bootcamp for digital marketers to learn new skills in SEO, PPC, social media, and more.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -547,6 +588,7 @@ const eventData: Event[] = [
     title: "Nottingham Digital Architecture Expo",
     description:
       "An expo focused on digital architecture, showcasing the latest tools, techniques, and projects in architectural technology.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -560,6 +602,7 @@ const eventData: Event[] = [
     title: "Nottingham Startup Showcase",
     description:
       "A showcase event for local startups to pitch their ideas to investors and fellow entrepreneurs.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -573,6 +616,7 @@ const eventData: Event[] = [
     title: "Nottingham Emerging Tech Forum",
     description:
       "A forum that highlights emerging technologies such as AR, VR, and AI, with talks from industry pioneers.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -586,6 +630,7 @@ const eventData: Event[] = [
     title: "Nottingham IoT Product Demo Day",
     description:
       "A demo day where IoT companies showcase their products and solutions to investors and potential customers.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -599,6 +644,7 @@ const eventData: Event[] = [
     title: "Nottingham Tech Meetup for Women in Tech",
     description:
       "A meetup focused on empowering women in the tech industry with networking and career-building opportunities.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -612,6 +658,7 @@ const eventData: Event[] = [
     title: "Nottingham Smart Cities Summit",
     description:
       "A summit discussing the future of smart cities, with a focus on technology-driven urban planning and sustainability.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -625,6 +672,7 @@ const eventData: Event[] = [
     title: "Nottingham Blockchain Developer Meetup",
     description:
       "A meetup for blockchain developers to discuss new blockchain frameworks, use cases, and development techniques.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -638,6 +686,7 @@ const eventData: Event[] = [
     title: "Nottingham Machine Learning Meetup",
     description:
       "A meetup for machine learning practitioners to share their knowledge, projects, and research in AI and data science.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -651,6 +700,7 @@ const eventData: Event[] = [
     title: "Nottingham Quantum Computing Conference",
     description:
       "A conference focusing on the latest breakthroughs in quantum computing, with talks from leading researchers and scientists.",
+    event_type: "Tech",
     details:
       "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?",
     location: { latitude: 52.9548, longitude: -1.1581 },
@@ -658,6 +708,562 @@ const eventData: Event[] = [
     created_by: 1,
     start_time: 1757232000000,
     end_time: 1757253600000,
+  },
+  {
+    event_id: 51,
+    title: "Nottingham Art & Sculpture Exhibition",
+    description:
+      "An exhibition featuring contemporary and classical artworks from local and international artists.",
+    event_type: "Culture",
+    details:
+      "Experience a captivating display of paintings, sculptures, and installations from emerging and renowned artists. Interactive sessions and artist talks included.",
+    location: { latitude: 52.9536, longitude: -1.1505 },
+    address: "Nottingham Contemporary, Weekday Cross, Nottingham NG1 2GB, UK",
+    created_by: 7,
+    start_time: 1756782000000,
+    end_time: 1756803600000,
+  },
+  {
+    event_id: 52,
+    title: "Shakespeare in the Park",
+    description:
+      "A live outdoor performance of Shakespeare's classic plays with modern twists.",
+    event_type: "Culture",
+    details:
+      "Bring a picnic and enjoy an evening of classic theatre under the stars. Performances by local and national theatre groups.",
+    location: { latitude: 52.95, longitude: -1.155 },
+    address: "Wollaton Park, Nottingham NG8 2AE, UK",
+    created_by: 12,
+    start_time: 1756935600000,
+    end_time: 1756957200000,
+  },
+  {
+    event_id: 53,
+    title: "Nottingham Jazz & Blues Festival",
+    description:
+      "A celebration of jazz and blues with performances by talented musicians.",
+    event_type: "Culture",
+    details:
+      "Live music, food stalls, and a vibrant atmosphere. Featuring both local and international jazz artists.",
+    location: { latitude: 52.9574, longitude: -1.151 },
+    address: "The Rescue Rooms, Goldsmith St, Nottingham NG1 5GG, UK",
+    created_by: 3,
+    start_time: 1757126400000,
+    end_time: 1757155200000,
+  },
+  {
+    event_id: 54,
+    title: "Cultural Food & Drink Fair",
+    description:
+      "A showcase of cuisines from around the world, with food tastings and cultural performances.",
+    event_type: "Culture",
+    details:
+      "Sample delicacies, watch live cooking demos, and enjoy traditional music and dance performances.",
+    location: { latitude: 52.9542, longitude: -1.1489 },
+    address: "Old Market Square, Nottingham NG1 2DT, UK",
+    created_by: 11,
+    start_time: 1757302800000,
+    end_time: 1757324400000,
+  },
+  {
+    event_id: 55,
+    title: "Nottingham Film Screening: Indie Shorts",
+    description:
+      "A screening of award-winning short films by indie filmmakers.",
+    event_type: "Culture",
+    details:
+      "Meet the filmmakers, participate in Q&A sessions, and explore the art of short filmmaking.",
+    location: { latitude: 52.9535, longitude: -1.151 },
+    address: "Broadway Cinema, 14-18 Broad St, Nottingham NG1 3AL, UK",
+    created_by: 9,
+    start_time: 1757475600000,
+    end_time: 1757493600000,
+  },
+  {
+    event_id: 56,
+    title: "Poetry Night: Voices of Nottingham",
+    description: "An evening of poetry recitals by local and national poets.",
+    event_type: "Culture",
+    details:
+      "Experience moving performances from spoken word artists and poets, covering themes of life, love, and social issues.",
+    location: { latitude: 52.954, longitude: -1.1495 },
+    address: "The Bookcase, 50 Main St, Nottingham NG12 5AD, UK",
+    created_by: 5,
+    start_time: 1757652000000,
+    end_time: 1757670000000,
+  },
+  {
+    event_id: 57,
+    title: "Nottingham Folk Music Evening",
+    description:
+      "An evening of folk music celebrating local and regional heritage.",
+    event_type: "Culture",
+    details:
+      "Enjoy live performances by talented folk bands and solo artists, along with traditional dance displays.",
+    location: { latitude: 52.9517, longitude: -1.1473 },
+    address: "Jam Cafe, 12 Heathcoat St, Nottingham NG1 3AA, UK",
+    created_by: 14,
+    start_time: 1757824800000,
+    end_time: 1757846400000,
+  },
+  {
+    event_id: 58,
+    title: "Nottingham History Walk",
+    description: "A guided tour through Nottingham's historical landmarks.",
+    event_type: "Culture",
+    details:
+      "Learn about the city's rich history, from Robin Hood legends to the industrial revolution.",
+    location: { latitude: 52.951, longitude: -1.1498 },
+    address: "Nottingham Castle, Lenton Rd, Nottingham NG1 6EL, UK",
+    created_by: 2,
+    start_time: 1757997600000,
+    end_time: 1758012000000,
+  },
+  {
+    event_id: 59,
+    title: "Theatre Workshop: Improvisation Skills",
+    description: "A hands-on workshop for actors and drama enthusiasts.",
+    event_type: "Culture",
+    details:
+      "Learn the art of improv through fun exercises and creative games, led by experienced theatre professionals.",
+    location: { latitude: 52.957, longitude: -1.1519 },
+    address: "Lakeside Arts, University of Nottingham, Nottingham NG7 2RD, UK",
+    created_by: 10,
+    start_time: 1758181200000,
+    end_time: 1758202800000,
+  },
+  {
+    event_id: 60,
+    title: "Creative Writing Workshop",
+    description:
+      "A workshop for aspiring writers to hone their storytelling skills.",
+    event_type: "Culture",
+    details:
+      "Engage in creative writing exercises, receive feedback, and develop your writing craft.",
+    location: { latitude: 52.9555, longitude: -1.1522 },
+    address: "Nottingham Writers' Studio, 25 Hockley, Nottingham NG1 1FP, UK",
+    created_by: 13,
+    start_time: 1758364800000,
+    end_time: 1758386400000,
+  },
+
+  {
+    event_id: 61,
+    title: "Nottingham Classical Music Evening",
+    description:
+      "An enchanting evening of classical music performances in a historic venue.",
+    event_type: "Culture",
+    details:
+      "Enjoy a selection of symphonies and chamber music by renowned orchestras, set in a beautifully restored venue. Experience the magic of classical music under expert conductors.",
+    location: { latitude: 52.953, longitude: -1.1575 },
+    address:
+      "Nottingham Royal Concert Hall, Convent St, Nottingham NG1 3LN, UK",
+    created_by: 8,
+    start_time: 1758537600000,
+    end_time: 1758559200000,
+  },
+  {
+    event_id: 62,
+    title: "Nottingham Street Art Festival",
+    description:
+      "A vibrant festival celebrating street art and graffiti in the heart of Nottingham.",
+    event_type: "Culture",
+    details:
+      "Join local artists for a weekend of murals, live graffiti, and interactive art installations across the city's urban spaces.",
+    location: { latitude: 52.956, longitude: -1.157 },
+    address: "Nottingham City Centre, Nottingham NG1 2AA, UK",
+    created_by: 3,
+    start_time: 1758724800000,
+    end_time: 1758746400000,
+  },
+  {
+    event_id: 63,
+    title: "Nottingham Dance & Theatre Night",
+    description:
+      "A night celebrating dance and theatrical performances in a contemporary setting.",
+    event_type: "Culture",
+    details:
+      "Watch a series of short performances ranging from modern dance to theatrical monologues, engaging the audience in a unique cultural experience.",
+    location: { latitude: 52.9538, longitude: -1.1552 },
+    address: "Nottingham Playhouse, 22 Drury Ln, Nottingham NG1 3ET, UK",
+    created_by: 11,
+    start_time: 1758912000000,
+    end_time: 1758933600000,
+  },
+  {
+    event_id: 64,
+    title: "Nottingham Literature Festival",
+    description:
+      "A festival dedicated to literature, featuring author readings, discussions, and book signings.",
+    event_type: "Culture",
+    details:
+      "Meet your favorite authors, participate in panel discussions, and explore a diverse range of literary genres in this engaging festival.",
+    location: { latitude: 52.955, longitude: -1.1525 },
+    address: "Nottingham Literature Centre, 5 Friar Ln, Nottingham NG1 3BA, UK",
+    created_by: 6,
+    start_time: 1759099200000,
+    end_time: 1759120800000,
+  },
+  {
+    event_id: 65,
+    title: "Nottingham Cultural Heritage Day",
+    description:
+      "A day dedicated to exploring the rich cultural heritage of Nottingham.",
+    event_type: "Culture",
+    details:
+      "Enjoy guided tours, exhibitions, and interactive sessions that delve into Nottingham's history and cultural evolution.",
+    location: { latitude: 52.959, longitude: -1.15 },
+    address: "Nottingham Museum, Lenton, Nottingham NG1 3TW, UK",
+    created_by: 10,
+    start_time: 1759286400000,
+    end_time: 1759308000000,
+  },
+  {
+    event_id: 66,
+    title: "Nottingham Folk Tales Evening",
+    description:
+      "An evening of storytelling and folk tales from local legends.",
+    event_type: "Culture",
+    details:
+      "Listen to captivating stories and folklore shared by expert storytellers, preserving the oral traditions of Nottingham.",
+    location: { latitude: 52.9543, longitude: -1.1567 },
+    address: "Nottingham Central Library, Angel Row, Nottingham NG1 2HF, UK",
+    created_by: 4,
+    start_time: 1759473600000,
+    end_time: 1759495200000,
+  },
+  {
+    event_id: 67,
+    title: "Nottingham Cultural Parade",
+    description:
+      "A vibrant parade showcasing Nottingham's diverse cultural communities.",
+    event_type: "Culture",
+    details:
+      "Participate or watch as local communities come together in a colourful display of traditional costumes, music, and dance.",
+    location: { latitude: 52.952, longitude: -1.155 },
+    address: "Nottingham City Centre, High Pavement, Nottingham NG1 2BF, UK",
+    created_by: 13,
+    start_time: 1759660800000,
+    end_time: 1759682400000,
+  },
+  {
+    event_id: 68,
+    title: "Nottingham International Film Festival",
+    description:
+      "A film festival featuring international films with cultural significance.",
+    event_type: "Culture",
+    details:
+      "Screenings, director talks, and panel discussions with filmmakers from around the world in a culturally immersive setting.",
+    location: { latitude: 52.9531, longitude: -1.1528 },
+    address: "Nottingham Film Centre, 20 South Parade, Nottingham NG1 5AD, UK",
+    created_by: 9,
+    start_time: 1759848000000,
+    end_time: 1759872000000,
+  },
+  {
+    event_id: 69,
+    title: "Nottingham Craft & Artisan Market",
+    description:
+      "A market celebrating local craftsmanship and artisan products.",
+    event_type: "Culture",
+    details:
+      "Discover handmade crafts, local produce, and traditional artisan goods. Engage with vendors and learn about their craft.",
+    location: { latitude: 52.9542, longitude: -1.1489 },
+    address: "Nottingham Market Square, Nottingham NG1 2DT, UK",
+    created_by: 15,
+    start_time: 1760035200000,
+    end_time: 1760056800000,
+  },
+  {
+    event_id: 70,
+    title: "Nottingham Cultural Open Mic Night",
+    description:
+      "A night for local talent to showcase their creative expressions in music, poetry, and art.",
+    event_type: "Culture",
+    details:
+      "Join local artists, poets, and musicians in a supportive open mic environment, encouraging creativity and community engagement.",
+    location: { latitude: 52.9525, longitude: -1.16 },
+    address: "Nottingham Arts Club, 18 Derby Rd, Nottingham NG7 3ER, UK",
+    created_by: 7,
+    start_time: 1760222400000,
+    end_time: 1760244000000,
+  },
+  {
+    event_id: 71,
+    title: "Nottingham Football Skills Challenge",
+    description:
+      "A competitive event focusing on football drills, techniques and skills challenges.",
+    event_type: "Sport",
+    details:
+      "Participate in various football challenges, skill drills, and mini-tournaments designed for players of all levels.",
+    location: { latitude: 52.9548, longitude: -1.1581 },
+    address: "Trent Bridge, Nottingham, NG2 3XX, UK",
+    created_by: 5,
+    start_time: 1760395200000,
+    end_time: 1760416800000,
+  },
+  {
+    event_id: 72,
+    title: "Nottingham Running Festival",
+    description:
+      "Join this exciting running festival featuring various race categories for all ages.",
+    event_type: "Sport",
+    details:
+      "The festival includes 5k, 10k races, and fun runs, with routes covering scenic areas of Nottingham.",
+    location: { latitude: 52.9533, longitude: -1.155 },
+    address: "Nottingham Racecourse, Nottingham, NG3 1AB, UK",
+    created_by: 12,
+    start_time: 1760568000000,
+    end_time: 1760589600000,
+  },
+  {
+    event_id: 73,
+    title: "Nottingham Cycle Marathon",
+    description:
+      "A cycling marathon event designed for enthusiasts of all skill levels.",
+    event_type: "Sport",
+    details:
+      "Test your endurance and cycling skills on a marathon route that winds through the picturesque streets of Nottingham.",
+    location: { latitude: 52.955, longitude: -1.16 },
+    address: "Cycle Hub Nottingham, Nottingham, NG4 2CD, UK",
+    created_by: 8,
+    start_time: 1760740800000,
+    end_time: 1760762400000,
+  },
+  {
+    event_id: 74,
+    title: "Nottingham Basketball Tournament",
+    description:
+      "A local basketball tournament inviting teams from across the city.",
+    event_type: "Sport",
+    details:
+      "Teams compete in a fast-paced tournament, showcasing athleticism and teamwork in a friendly competitive environment.",
+    location: { latitude: 52.954, longitude: -1.157 },
+    address: "Nottingham Sports Arena, Nottingham, NG1 4BZ, UK",
+    created_by: 14,
+    start_time: 1760913600000,
+    end_time: 1760935200000,
+  },
+  {
+    event_id: 75,
+    title: "Nottingham Cricket Open Day",
+    description:
+      "Experience the spirit of cricket at Nottingham's premier cricket ground.",
+    event_type: "Sport",
+    details:
+      "Join a day full of cricket matches, skill demonstrations, and meet-and-greet sessions with local cricket stars.",
+    location: { latitude: 52.952, longitude: -1.159 },
+    address: "Nottingham Cricket Club, Nottingham, NG5 6FG, UK",
+    created_by: 7,
+    start_time: 1761086400000,
+    end_time: 1761108000000,
+  },
+  {
+    event_id: 76,
+    title: "Nottingham Rugby Friendly",
+    description: "A friendly rugby match between local teams.",
+    event_type: "Sport",
+    details:
+      "Watch or participate in a thrilling rugby match that promises high energy and community spirit.",
+    location: { latitude: 52.9565, longitude: -1.1605 },
+    address: "Nottingham Rugby Park, Nottingham, NG6 7HI, UK",
+    created_by: 11,
+    start_time: 1761259200000,
+    end_time: 1761280800000,
+  },
+  {
+    event_id: 77,
+    title: "Nottingham Swimming Gala",
+    description:
+      "A competitive swimming event open to amateur and professional swimmers.",
+    event_type: "Sport",
+    details:
+      "Compete in various swimming races and relays, and enjoy water sports activities throughout the day.",
+    location: { latitude: 52.957, longitude: -1.158 },
+    address: "Nottingham Aquatic Centre, Nottingham, NG7 8JK, UK",
+    created_by: 3,
+    start_time: 1761432000000,
+    end_time: 1761453600000,
+  },
+  {
+    event_id: 78,
+    title: "Nottingham Tennis Open",
+    description:
+      "A tennis tournament for players of all levels, from amateurs to pros.",
+    event_type: "Sport",
+    details:
+      "Participate in singles and doubles matches, with professional coaching sessions available throughout the tournament.",
+    location: { latitude: 52.9545, longitude: -1.1575 },
+    address: "Nottingham Lawn Tennis Club, Nottingham, NG8 9LM, UK",
+    created_by: 10,
+    start_time: 1761604800000,
+    end_time: 1761626400000,
+  },
+  {
+    event_id: 79,
+    title: "Nottingham Golf Classic",
+    description:
+      "A classic golf tournament held at one of Nottingham's premier courses.",
+    event_type: "Sport",
+    details:
+      "Enjoy a day of competitive golf, networking, and relaxation at a top-notch golf course in the city.",
+    location: { latitude: 52.9538, longitude: -1.156 },
+    address: "Nottingham Golf Club, Nottingham, NG9 1OP, UK",
+    created_by: 6,
+    start_time: 1761777600000,
+    end_time: 1761799200000,
+  },
+  {
+    event_id: 80,
+    title: "Nottingham Badminton Championship",
+    description: "Compete in Nottingham's annual badminton championship event.",
+    event_type: "Sport",
+    details:
+      "Challenge yourself in singles and doubles matches in this fast-paced badminton competition, open to players of all levels.",
+    location: { latitude: 52.9555, longitude: -1.1545 },
+    address: "Nottingham Badminton Arena, Nottingham, NG10 2QR, UK",
+    created_by: 9,
+    start_time: 1761950400000,
+    end_time: 1761972000000,
+  },
+  {
+    event_id: 81,
+    title: "Nottingham Ultimate Frisbee Tournament",
+    description:
+      "A fast-paced ultimate frisbee tournament open to teams across the city.",
+    event_type: "Sport",
+    details:
+      "Compete in a dynamic frisbee tournament that tests your agility and teamwork. Open registration for all skill levels.",
+    location: { latitude: 52.9565, longitude: -1.1585 },
+    address: "Nottingham Sports Field, Nottingham, NG1 6AX, UK",
+    created_by: 2,
+    start_time: 1762136800000,
+    end_time: 1762158400000,
+  },
+  {
+    event_id: 82,
+    title: "Nottingham Martial Arts Workshop",
+    description:
+      "A workshop focusing on martial arts techniques and self-defense.",
+    event_type: "Sport",
+    details:
+      "Learn essential martial arts skills with expert trainers. A great event for beginners and advanced practitioners alike.",
+    location: { latitude: 52.957, longitude: -1.159 },
+    address:
+      "Nottingham Martial Arts Centre, 24 High Rd, Nottingham, NG2 3LR, UK",
+    created_by: 11,
+    start_time: 1762303200000,
+    end_time: 1762324800000,
+  },
+  {
+    event_id: 83,
+    title: "Nottingham Swimming Relay Challenge",
+    description:
+      "A team-based swimming relay event designed for fun and fitness.",
+    event_type: "Sport",
+    details:
+      "Form a team and compete in a relay race at one of Nottingham's premier aquatic centers. Prizes for top teams.",
+    location: { latitude: 52.9575, longitude: -1.1582 },
+    address: "Nottingham Aquatic Centre, Nottingham, NG7 8JK, UK",
+    created_by: 6,
+    start_time: 1762476000000,
+    end_time: 1762497600000,
+  },
+  {
+    event_id: 84,
+    title: "Nottingham Parkour Challenge",
+    description:
+      "Test your agility and creativity in a parkour challenge across urban obstacles.",
+    event_type: "Sport",
+    details:
+      "Join a group of parkour enthusiasts for a day of obstacle challenges, workshops, and freestyle competitions.",
+    location: { latitude: 52.955, longitude: -1.1565 },
+    address: "Nottingham Urban Park, Nottingham, NG1 2BD, UK",
+    created_by: 8,
+    start_time: 1762652400000,
+    end_time: 1762674000000,
+  },
+  {
+    event_id: 85,
+    title: "Nottingham Archery Contest",
+    description: "An archery contest for all ages and skill levels.",
+    event_type: "Sport",
+    details:
+      "Practice your aim and compete in various archery challenges at a historic site in Nottingham.",
+    location: { latitude: 52.954, longitude: -1.1578 },
+    address: "Nottingham Archery Range, 7 Bow Rd, Nottingham, NG1 5EZ, UK",
+    created_by: 14,
+    start_time: 1762825200000,
+    end_time: 1762846800000,
+  },
+  {
+    event_id: 86,
+    title: "Nottingham Cycling Time Trial",
+    description:
+      "A time trial cycling event for competitive cyclists in Nottingham.",
+    event_type: "Sport",
+    details:
+      "Race against the clock on a specially designed cycling route. Registration required in advance.",
+    location: { latitude: 52.956, longitude: -1.1572 },
+    address: "Nottingham Cycle Route, Nottingham, NG3 4AA, UK",
+    created_by: 3,
+    start_time: 1763001600000,
+    end_time: 1763023200000,
+  },
+  {
+    event_id: 87,
+    title: "Nottingham Rowing Competition",
+    description: "Competitive rowing event held on Nottingham's waterways.",
+    event_type: "Sport",
+    details:
+      "Compete in singles or team rowing races, with various categories based on age and skill level.",
+    location: { latitude: 52.9548, longitude: -1.1592 },
+    address: "Nottingham Rowing Club, Nottingham, NG4 1XY, UK",
+    created_by: 7,
+    start_time: 1763174400000,
+    end_time: 1763196000000,
+  },
+  {
+    event_id: 88,
+    title: "Nottingham Volleyball Tournament",
+    description:
+      "A volleyball tournament featuring indoor and beach volleyball matches.",
+    event_type: "Sport",
+    details:
+      "Form a team and join the competition in a fast-paced volleyball tournament. All skill levels welcome.",
+    location: { latitude: 52.9555, longitude: -1.156 },
+    address: "Nottingham Volleyball Arena, Nottingham, NG5 2TR, UK",
+    created_by: 10,
+    start_time: 1763347200000,
+    end_time: 1763368800000,
+  },
+  {
+    event_id: 89,
+    title: "Nottingham Boxing Night",
+    description:
+      "An exhilarating boxing event featuring local fighters and exhibitions.",
+    event_type: "Sport",
+    details:
+      "Watch professional boxing matches and enjoy training demonstrations in a thrilling combat sports environment.",
+    location: { latitude: 52.9565, longitude: -1.1578 },
+    address: "Nottingham Boxing Club, Nottingham, NG6 3UW, UK",
+    created_by: 5,
+    start_time: 1763516400000,
+    end_time: 1763538000000,
+  },
+  {
+    event_id: 90,
+    title: "Nottingham Fitness Bootcamp",
+    description:
+      "A high-intensity fitness bootcamp event in an outdoor setting.",
+    event_type: "Sport",
+    details:
+      "Join professional trainers for a day of high-energy workouts, fitness challenges, and team exercises.",
+    location: { latitude: 52.9543, longitude: -1.1589 },
+    address: "Nottingham Fitness Park, Nottingham, NG1 1XX, UK",
+    created_by: 12,
+    start_time: 1763692800000,
+    end_time: 1763714400000,
   },
 ];
 
