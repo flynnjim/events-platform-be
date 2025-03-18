@@ -9,6 +9,7 @@ export const updateEvent = async (body: Event): Promise<Event> => {
     const values: PatchEventBody = [
       body.title,
       body.description,
+      body.event_type,
       body.details,
       body.location,
       body.address,
@@ -19,7 +20,7 @@ export const updateEvent = async (body: Event): Promise<Event> => {
     ];
 
     const { rows } = await db.query<Event>(
-      "UPDATE events SET title = $1, description = $2, details = $3, location = $4, address = $5, created_by = $6, start_time = $7, end_time = $8 WHERE event_id = $9 RETURNING *;",
+      "UPDATE events SET title = $1, description = $2, event_type = $3, details = $4, location = $5, address = $6, created_by = $7, start_time = $8, end_time = $9 WHERE event_id = $10 RETURNING *;",
       values
     );
 

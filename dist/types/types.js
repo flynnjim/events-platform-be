@@ -4,6 +4,7 @@ exports.isValidRegistrationPatch = exports.isValidRegistrationBody = exports.isV
 const isValidNewEventBody = (body) => {
     return (typeof body.title === "string" &&
         typeof body.description === "string" &&
+        typeof body.event_type === "string" &&
         typeof body.details === "string" &&
         typeof body.address === "string" &&
         typeof body.start_time === "number" &&
@@ -17,6 +18,7 @@ exports.isValidNewEventBody = isValidNewEventBody;
 const isValidEventPatch = (body) => {
     return (typeof body.title === "string" &&
         typeof body.description === "string" &&
+        typeof body.event_type === "string" &&
         typeof body.details === "string" &&
         typeof body.address === "string" &&
         typeof body.start_time === "number" &&

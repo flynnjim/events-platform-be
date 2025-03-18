@@ -18,6 +18,7 @@ export const insertEvent = async (
     const insertTuple: InsertEventBody = [
       convertedEvent.title,
       convertedEvent.description,
+      convertedEvent.event_type,
       convertedEvent.details,
       convertedEvent.location,
       convertedEvent.address,
@@ -27,7 +28,7 @@ export const insertEvent = async (
     ];
 
     const { rows } = await db.query<Event>(
-      "INSERT INTO events (title, description, details, location, address, created_by, start_time, end_time) VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING *;",
+      "INSERT INTO events (title, description, event_type, details, location, address, created_by, start_time, end_time) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING *;",
       insertTuple
     );
 

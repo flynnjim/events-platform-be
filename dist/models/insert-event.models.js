@@ -26,6 +26,7 @@ const insertEvent = (created_by, newEvent) => __awaiter(void 0, void 0, void 0, 
         const insertTuple = [
             convertedEvent.title,
             convertedEvent.description,
+            convertedEvent.event_type,
             convertedEvent.details,
             convertedEvent.location,
             convertedEvent.address,
@@ -33,7 +34,7 @@ const insertEvent = (created_by, newEvent) => __awaiter(void 0, void 0, void 0, 
             convertedEvent.start_time.toISOString(),
             convertedEvent.end_time.toISOString(),
         ];
-        const { rows } = yield connection_1.default.query("INSERT INTO events (title, description, details, location, address, created_by, start_time, end_time) VALUES ($1, $2, $3, $4, $5, $6, $7, $8) RETURNING *;", insertTuple);
+        const { rows } = yield connection_1.default.query("INSERT INTO events (title, description, event_type, details, location, address, created_by, start_time, end_time) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING *;", insertTuple);
         return rows.length > 0 ? rows[0] : null;
     }
     catch (error) {
