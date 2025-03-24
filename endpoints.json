@@ -70,7 +70,7 @@
     "description": "serves up all registered users event_id",
     "queries": [],
     "exampleResponse": {
-      "topics": [
+      "users": [
         {
           "user_id": 1,
           "username": "tech_guru",
