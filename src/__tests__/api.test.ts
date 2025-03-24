@@ -49,10 +49,10 @@ describe("Events Platfomr Backend API", () => {
         });
     });
   });
-  describe("GET /api/users/2?password=password2", () => {
+  describe("GET /api/users/:user_id", () => {
     test("returns a 200 response status with correct data properties", () => {
       return request(app)
-        .get("/api/users/2?password=password2")
+        .get("/api/users/2")
         .expect(200)
         .then((response) => {
           const {
@@ -64,30 +64,11 @@ describe("Events Platfomr Backend API", () => {
           expect(user.first_name).toBe("John");
           expect(user.last_name).toBe("Smith");
           expect(user.email).toBe("john.smith@example.com");
-
-          const rawPassword = "password2";
-
-          return bcrypt
-            .compare(rawPassword, user.password_hash)
-            .then((isMatch) => {
-              expect(isMatch).toBeTruthy();
-            });
-        });
-    });
-    test("returns a 403 and Invalid password message", () => {
-      return request(app)
-        .get("/api/users/2?password=password1")
-        .expect(403)
-        .then((response) => {
-          const {
-            body: { msg },
-          } = response;
-          expect(msg).toBe("Invalid password");
         });
     });
     test("returns a 400 Bad request when parameter is invalid", () => {
       return request(app)
-        .get("/api/users/two?password=password2")
+        .get("/api/users/two")
         .expect(400)
         .then((response) => {
           const {
@@ -98,7 +79,7 @@ describe("Events Platfomr Backend API", () => {
     });
     test("returns a 404 not found when parameter is out of user_id range", () => {
       return request(app)
-        .get("/api/users/99?password=password2")
+        .get("/api/users/99")
         .expect(404)
         .then((response) => {
           const {
