@@ -1,3 +1,4 @@
+import bcrypt from "bcrypt";
 import { Staff } from "../../../types/types";
 
 const staffData: Staff[] = [
@@ -6,36 +7,49 @@ const staffData: Staff[] = [
     first_name: "Liam",
     last_name: "Parker",
     email: "liam.parker@company.com",
-    password_hash: "$2b$10$abcdefg12345678zxyTkjL6/2z5wD5U8Xp/a9rHg",
+    password_hash: "password1",
   },
   {
     staff_id: 2,
     first_name: "Sophia",
     last_name: "Taylor",
     email: "sophia.taylor@company.com",
-    password_hash: "$2b$10$hijkl1234567890abcPQR9hfgG6wvqOpW1XP9/nfu",
+    password_hash: "password2",
   },
   {
     staff_id: 3,
     first_name: "Max",
     last_name: "Davis",
     email: "max.davis@company.com",
-    password_hash: "$2b$10$abcdefghijklmnopqrstuvWyx4321Dfg4w8hLm9h",
+    password_hash: "password3",
   },
   {
     staff_id: 4,
     first_name: "Emma",
     last_name: "Wilson",
     email: "emma.wilson@company.com",
-    password_hash: "$2b$10$1234567890abcdefJKLMPrstuvWX9fgh7xyZ90vXt",
+    password_hash: "password4",
   },
   {
     staff_id: 5,
     first_name: "Lucas",
     last_name: "Moore",
     email: "lucas.moore@company.com",
-    password_hash: "$2b$10$9876543210abcdefzYXQ5LMNOpQRstuvwXYab9LmP",
+    password_hash: "password5",
   },
 ];
 
-export default staffData;
+const saltRounds = 10;
+
+const staffWithHashedPasswords: Staff[] = staffData.map((staff) => {
+  const hash = bcrypt.hashSync(staff.password_hash, saltRounds);
+  return {
+    staff_id: staff.staff_id,
+    first_name: staff.first_name,
+    last_name: staff.last_name,
+    email: staff.email,
+    password_hash: hash,
+  };
+});
+
+export default staffWithHashedPasswords;

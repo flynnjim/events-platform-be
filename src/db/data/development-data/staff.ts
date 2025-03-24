@@ -1,3 +1,4 @@
+import bcrypt from "bcrypt";
 import { Staff } from "../../../types/types";
 
 const staffData: Staff[] = [
@@ -6,106 +7,119 @@ const staffData: Staff[] = [
     first_name: "Liam",
     last_name: "Parker",
     email: "liam.parker@company.com",
-    password_hash: "$2b$10$abcdefg12345678zxyTkjL6/2z5wD5U8Xp/a9rHg",
+    password_hash: "password1",
   },
   {
     staff_id: 2,
     first_name: "Sophia",
     last_name: "Adams",
     email: "sophia.adams@company.com",
-    password_hash: "$2b$10$abcdefg12345678aBcDeF6jL9/2p3wD5O7sFp6dZg",
+    password_hash: "password2",
   },
   {
     staff_id: 3,
     first_name: "Ethan",
     last_name: "Brooks",
     email: "ethan.brooks@company.com",
-    password_hash: "$2b$10$abcdefg12345678aSdFgTk2/9q5wH6U8Rp6tR8pHd",
+    password_hash: "password3",
   },
   {
     staff_id: 4,
     first_name: "Olivia",
     last_name: "Scott",
     email: "olivia.scott@company.com",
-    password_hash: "$2b$10$abcdefg12345678nP6qGhLj7/3dY5V8Yp9rP2r7Hp",
+    password_hash: "password4",
   },
   {
     staff_id: 5,
     first_name: "Lucas",
     last_name: "Morris",
     email: "lucas.morris@company.com",
-    password_hash: "$2b$10$abcdefg12345678rT2eFgO8/5jz9wL6JdO2pI4kWs",
+    password_hash: "password5",
   },
   {
     staff_id: 6,
     first_name: "Amelia",
     last_name: "Green",
     email: "amelia.green@company.com",
-    password_hash: "$2b$10$abcdefg12345678eK3pMnL0/2zR5T9Wp3O7uRd5Fh",
+    password_hash: "password6",
   },
   {
     staff_id: 7,
     first_name: "Aiden",
     last_name: "Martinez",
     email: "aiden.martinez@company.com",
-    password_hash: "$2b$10$abcdefg12345678mC6fGh0K2/9h3sR5Up2fP6t7Zg",
+    password_hash: "password7",
   },
   {
     staff_id: 8,
     first_name: "Mia",
     last_name: "Taylor",
     email: "mia.taylor@company.com",
-    password_hash: "$2b$10$abcdefg12345678kA2fGh7P5/9r6T9kV0F2lT7zDh",
+    password_hash: "password8",
   },
   {
     staff_id: 9,
     first_name: "James",
     last_name: "Wilson",
     email: "james.wilson@company.com",
-    password_hash: "$2b$10$abcdefg12345678uT7rFxZ9/3q1hL6X2bR9tH7tZp",
+    password_hash: "password9",
   },
   {
     staff_id: 10,
     first_name: "Charlotte",
     last_name: "Davis",
     email: "charlotte.davis@company.com",
-    password_hash: "$2b$10$abcdefg12345678bT3sFn8K9/4j1W8Y6M0P3qL7tXp",
+    password_hash: "password10",
   },
   {
     staff_id: 11,
     first_name: "Mason",
     last_name: "Thompson",
     email: "mason.thompson@company.com",
-    password_hash: "$2b$10$abcdefg12345678vJ7qLs1M2/8zP0X7U3R4tZ9tGw",
+    password_hash: "password11",
   },
   {
     staff_id: 12,
     first_name: "Isabella",
     last_name: "Garcia",
     email: "isabella.garcia@company.com",
-    password_hash: "$2b$10$abcdefg12345678gT2mO9N4/1fD5V9K6R0pX2r7tHb",
+    password_hash: "password12",
   },
   {
     staff_id: 13,
     first_name: "Jackson",
     last_name: "Hernandez",
     email: "jackson.hernandez@company.com",
-    password_hash: "$2b$10$abcdefg12345678dQ6oJ5M9/3tX5W7U5F0yH7pZmV",
+    password_hash: "password13",
   },
   {
     staff_id: 14,
     first_name: "Harper",
     last_name: "Carter",
     email: "harper.carter@company.com",
-    password_hash: "$2b$10$abcdefg12345678wB7vJ8L2/0rC3T9X4U7mP2tZt1R",
+    password_hash: "password14",
   },
   {
     staff_id: 15,
     first_name: "Lily",
     last_name: "Rodriguez",
     email: "lily.rodriguez@company.com",
-    password_hash: "$2b$10$abcdefg12345678nJ3kY9Q5/2tF6R7T9X1mP6r9gTp",
+    password_hash: "password15",
   },
 ];
 
-export default staffData;
+const saltRounds = 10;
+
+const staffWithHashedPasswords: Staff[] = staffData.map((staff) => {
+  const hash = bcrypt.hashSync(staff.password_hash, saltRounds);
+  return {
+    staff_id: staff.staff_id,
+    first_name: staff.first_name,
+    last_name: staff.last_name,
+    email: staff.email,
+    password_hash: hash,
+  };
+});
+
+export default staffWithHashedPasswords;
