@@ -1,46 +1,69 @@
-import { User } from "../../../types/types";
+import bcrypt from "bcrypt";
 
-const userData: User[] = [
+interface User {
+  user_id: number;
+  username: string;
+  first_name: string;
+  last_name: string;
+  email: string;
+  password_hash: string;
+}
+
+const usersWithRawPasswords: User[] = [
   {
     user_id: 1,
-    username: "tech_guru",
-    first_name: "Alice",
-    last_name: "Johnson",
-    email: "alice.johnson@example.com",
-    password_hash: "$2b$10$abcdefghijklmnopqrstuv",
+    username: "cloud_expert",
+    first_name: "Jackson",
+    last_name: "Thomas",
+    email: "jackson.thomas@example.com",
+    password_hash: "password1",
   },
   {
     user_id: 2,
-    username: "code_master",
-    first_name: "Bob",
+    username: "web_dev_123",
+    first_name: "John",
     last_name: "Smith",
-    email: "bob.smith@example.com",
-    password_hash: "$2b$10$1234567890abcdefghijklm",
+    email: "john.smith@example.com",
+    password_hash: "password2",
   },
   {
     user_id: 3,
-    username: "dev_wizard",
-    first_name: "Charlie",
-    last_name: "Brown",
-    email: "charlie.brown@example.com",
-    password_hash: "$2b$10$zyxwvutsrqponmlkjihgfedc",
+    username: "cyber_wiz",
+    first_name: "Olivia",
+    last_name: "Taylor",
+    email: "olivia.taylor@example.com",
+    password_hash: "password3",
   },
   {
     user_id: 4,
-    username: "data_ninja",
-    first_name: "Diana",
-    last_name: "Lopez",
-    email: "diana.lopez@example.com",
-    password_hash: "$2b$10$pqrstuvwxyzabcdefghijk",
+    username: "dev_master",
+    first_name: "James",
+    last_name: "Brown",
+    email: "james.brown@example.com",
+    password_hash: "password4",
   },
   {
     user_id: 5,
-    username: "cyber_hawk",
-    first_name: "Ethan",
-    last_name: "Walker",
-    email: "ethan.walker@example.com",
-    password_hash: "$2b$10$mnopqrstuvwxabcdefghijkl",
+    username: "design_queen",
+    first_name: "Sophia",
+    last_name: "Williams",
+    email: "sophia.williams@example.com",
+    password_hash: "password5",
   },
 ];
 
-export default userData;
+const saltRounds = 10;
+
+const usersWithHashedPasswords: User[] = usersWithRawPasswords.map((user) => {
+  const hash = bcrypt.hashSync(user.password_hash, saltRounds);
+  return {
+    user_id: user.user_id,
+    username: user.username,
+    first_name: user.first_name,
+    last_name: user.last_name,
+    email: user.email,
+    password_hash: hash,
+  };
+});
+
+export default usersWithHashedPasswords;

@@ -4,6 +4,7 @@ import db from "../db/connection";
 import seed from "../db/seeds/seed";
 import testData from "../db/data/test-data";
 import { User, Event, Staff } from "../types/types";
+import bcrypt from "bcrypt";
 
 beforeEach(async () => {
   await seed(testData);
@@ -59,11 +60,18 @@ describe("Events Platfomr Backend API", () => {
           } = response;
           expect(Array.isArray(user)).toBe(false);
           expect(user.user_id).toBe(2);
-          expect(user.username).toBe("code_master");
-          expect(user.first_name).toBe("Bob");
+          expect(user.username).toBe("web_dev_123");
+          expect(user.first_name).toBe("John");
           expect(user.last_name).toBe("Smith");
-          expect(user.email).toBe("bob.smith@example.com");
-          expect(user.password_hash).toBe("$2b$10$1234567890abcdefghijklm");
+          expect(user.email).toBe("john.smith@example.com");
+
+          const rawPassword = "password2";
+
+          return bcrypt
+            .compare(rawPassword, user.password_hash)
+            .then((isMatch) => {
+              expect(isMatch).toBeTruthy();
+            });
         });
     });
     test("returns a 400 Bad request when parameter is invalid", () => {
@@ -175,10 +183,10 @@ describe("Events Platfomr Backend API", () => {
           expect(Array.isArray(users)).toBe(true);
           users.forEach((user: User) => {
             expect(user.user_id).toBe(3);
-            expect(user.username).toBe("dev_wizard");
-            expect(user.first_name).toBe("Charlie");
-            expect(user.last_name).toBe("Brown");
-            expect(user.email).toBe("charlie.brown@example.com");
+            expect(user.username).toBe("cyber_wiz");
+            expect(user.first_name).toBe("Olivia");
+            expect(user.last_name).toBe("Taylor");
+            expect(user.email).toBe("olivia.taylor@example.com");
           });
         });
     });
