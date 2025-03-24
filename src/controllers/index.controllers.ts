@@ -10,7 +10,7 @@ import { patchEvent } from "./patch-event.controllers";
 import { postRegistration } from "./post-registration.controllers";
 import { patchRegistration } from "./patch-registration.controllers";
 import { getDocumentation } from "./get-documentation.controllers";
-
+import { getUserLogin } from "./get-user-login.controllers";
 export {
   getUsers,
   getSingleUser,
@@ -24,4 +24,5 @@ export {
   postRegistration,
   patchRegistration,
   getDocumentation,
+  getUserLogin,
 };

@@ -22,6 +22,7 @@ app.patch("/api/events", index_controllers_1.patchEvent);
 app.post("/api/registration", index_controllers_1.postRegistration);
 app.patch("/api/registration", index_controllers_1.patchRegistration);
 app.get("/api", index_controllers_1.getDocumentation);
+app.post("/api/users/login", index_controllers_1.getUserLogin);
 app.all("*", (request, response) => {
     response
         .status(404)
