@@ -14,8 +14,7 @@ export const getSingleStaff = async (
 ): Promise<void> => {
   try {
     const { staff_id } = req.params;
-    // const { password } = req.query;
-    // console.log(password);
+    const { password } = req.query;
 
     if (!/^\d+$/.test(staff_id)) {
       return next(createError("Bad request", 400));
@@ -25,17 +24,17 @@ export const getSingleStaff = async (
       return next(notFoundError("Staff"));
     }
 
-    // if (!password) {
-    //   return next(createError("Password query parameter is required", 400));
-    // }
+    if (!password) {
+      return next(createError("Password query parameter is required", 400));
+    }
 
-    // const isMatch = await bcrypt.compare(
-    //   password as string,
-    //   staff.password_hash
-    // );
-    // if (!isMatch) {
-    //   return next(createError("Invalid password", 403)); // Unauthorized error
-    // }
+    const isMatch = await bcrypt.compare(
+      password as string,
+      staff.password_hash
+    );
+    if (!isMatch) {
+      return next(createError("Invalid password", 403));
+    }
 
     res.status(200).json({ staff });
   } catch (error) {
