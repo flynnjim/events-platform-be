@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getUserLogin = exports.getDocumentation = exports.patchRegistration = exports.postRegistration = exports.patchEvent = exports.postEvent = exports.getSingleStaff = exports.getAllStaff = exports.getRegisteredUsers = exports.getSingleEvent = exports.getAllEvents = exports.getSingleUser = exports.getUsers = void 0;
+exports.getStaffLogin = exports.getUserLogin = exports.getDocumentation = exports.patchRegistration = exports.postRegistration = exports.patchEvent = exports.postEvent = exports.getSingleStaff = exports.getAllStaff = exports.getRegisteredUsers = exports.getSingleEvent = exports.getAllEvents = exports.getSingleUser = exports.getUsers = void 0;
 const get_all_users_controllers_1 = require("./get-all-users.controllers");
 Object.defineProperty(exports, "getUsers", { enumerable: true, get: function () { return get_all_users_controllers_1.getUsers; } });
 const get_single_user_controllers_1 = require("./get-single-user.controllers");
@@ -27,3 +27,5 @@ const get_documentation_controllers_1 = require("./get-documentation.controllers
 Object.defineProperty(exports, "getDocumentation", { enumerable: true, get: function () { return get_documentation_controllers_1.getDocumentation; } });
 const get_user_login_controllers_1 = require("./get-user-login.controllers");
 Object.defineProperty(exports, "getUserLogin", { enumerable: true, get: function () { return get_user_login_controllers_1.getUserLogin; } });
+const get_staff_login_controllers_1 = require("./get-staff-login.controllers");
+Object.defineProperty(exports, "getStaffLogin", { enumerable: true, get: function () { return get_staff_login_controllers_1.getStaffLogin; } });

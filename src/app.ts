@@ -1,4 +1,6 @@
 import express from "express";
+import dotenv from "dotenv";
+dotenv.config();
 const app = express();
 import cors from "cors";
 app.use(cors());
@@ -18,6 +20,7 @@ import {
   patchRegistration,
   getDocumentation,
   getUserLogin,
+  getStaffLogin,
 } from "./controllers/index.controllers";
 import { errorHandler } from "./middlewares/error-handler.middlewares";
 
@@ -46,6 +49,8 @@ app.patch("/api/registration", patchRegistration);
 app.get("/api", getDocumentation);
 
 app.post("/api/users/login", getUserLogin);
+
+app.post("/api/staff/login", getStaffLogin);
 
 app.all("*", (request, response) => {
   response

@@ -589,7 +589,7 @@ describe("Events Platfomr Backend API", () => {
         });
     });
     describe("POST /api/users/login returns user for passed username and password", () => {
-        test("returns 201 status code and an object with event added", () => {
+        test("returns 201 status code and returns user object", () => {
             const body = {
                 username: "cloud_expert",
                 password: "password1",
@@ -660,6 +660,79 @@ describe("Events Platfomr Backend API", () => {
                 .then((response) => {
                 const { body: { msg }, } = response;
                 expect(msg).toBe("Username and password are required");
+            });
+        });
+    });
+    describe("POST /api/staff/login returns staff for passed email and password", () => {
+        test("returns 201 status code and staff object", () => {
+            const body = {
+                email: "liam.parker@company.com",
+                password: "password1",
+            };
+            return (0, supertest_1.default)(app_1.default)
+                .post("/api/staff/login")
+                .send(body)
+                .expect(201)
+                .then((response) => {
+                const { body: { staff }, } = response;
+                expect(staff.staff_id).toBe(1);
+                expect(staff.first_name).toBe("Liam");
+                expect(staff.last_name).toBe("Parker");
+                expect(staff.email).toBe("liam.parker@company.com");
+            });
+        });
+        test("returns 403 status code and Invalid password message", () => {
+            const body = {
+                email: "liam.parker@company.com",
+                password: "password2",
+            };
+            return (0, supertest_1.default)(app_1.default)
+                .post("/api/staff/login")
+                .send(body)
+                .expect(403)
+                .then((response) => {
+                const { body: { msg }, } = response;
+                expect(msg).toBe("Invalid password");
+            });
+        });
+        test("returns 404 status code and User not found message if no match message", () => {
+            const body = {
+                email: "liam.gallagher@company.com",
+                password: "password1",
+            };
+            return (0, supertest_1.default)(app_1.default)
+                .post("/api/staff/login")
+                .send(body)
+                .expect(404)
+                .then((response) => {
+                const { body: { msg }, } = response;
+                expect(msg).toBe("Staff not found");
+            });
+        });
+        test("returns 400 status code and Email and password are required message if username or password missing", () => {
+            const body = {
+                email: "liam.parker@company.com",
+            };
+            return (0, supertest_1.default)(app_1.default)
+                .post("/api/staff/login")
+                .send(body)
+                .expect(400)
+                .then((response) => {
+                const { body: { msg }, } = response;
+                expect(msg).toBe("Email and password are required");
+            });
+        });
+        test("returns 400 status code and Email and password are required message if username or password missing", () => {
+            const body = {
+                password: "password1",
+            };
+            return (0, supertest_1.default)(app_1.default)
+                .post("/api/staff/login")
+                .send(body)
+                .expect(400)
+                .then((response) => {
+                const { body: { msg }, } = response;
+                expect(msg).toBe("Email and password are required");
             });
         });
     });
