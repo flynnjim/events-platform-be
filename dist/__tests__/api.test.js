@@ -17,6 +17,7 @@ const supertest_1 = __importDefault(require("supertest"));
 const connection_1 = __importDefault(require("../db/connection"));
 const seed_1 = __importDefault(require("../db/seeds/seed"));
 const test_data_1 = __importDefault(require("../db/data/test-data"));
+const bcrypt_1 = __importDefault(require("bcrypt"));
 beforeEach(() => __awaiter(void 0, void 0, void 0, function* () {
     yield (0, seed_1.default)(test_data_1.default);
 }));
@@ -52,25 +53,39 @@ describe("Events Platfomr Backend API", () => {
             });
         });
     });
-    describe("GET /api/users/:user_id", () => {
+    describe("GET /api/users/2?password=password2", () => {
         test("returns a 200 response status with correct data properties", () => {
             return (0, supertest_1.default)(app_1.default)
-                .get("/api/users/2")
+                .get("/api/users/2?password=password2")
                 .expect(200)
                 .then((response) => {
                 const { body: { user }, } = response;
                 expect(Array.isArray(user)).toBe(false);
                 expect(user.user_id).toBe(2);
-                expect(user.username).toBe("code_master");
-                expect(user.first_name).toBe("Bob");
+                expect(user.username).toBe("web_dev_123");
+                expect(user.first_name).toBe("John");
                 expect(user.last_name).toBe("Smith");
-                expect(user.email).toBe("bob.smith@example.com");
-                expect(user.password_hash).toBe("$2b$10$1234567890abcdefghijklm");
+                expect(user.email).toBe("john.smith@example.com");
+                const rawPassword = "password2";
+                return bcrypt_1.default
+                    .compare(rawPassword, user.password_hash)
+                    .then((isMatch) => {
+                    expect(isMatch).toBeTruthy();
+                });
+            });
+        });
+        test("returns a 403 and Invalid password message", () => {
+            return (0, supertest_1.default)(app_1.default)
+                .get("/api/users/2?password=password1")
+                .expect(403)
+                .then((response) => {
+                const { body: { msg }, } = response;
+                expect(msg).toBe("Invalid password");
             });
         });
         test("returns a 400 Bad request when parameter is invalid", () => {
             return (0, supertest_1.default)(app_1.default)
-                .get("/api/users/two")
+                .get("/api/users/two?password=password2")
                 .expect(400)
                 .then((response) => {
                 const { body: { msg }, } = response;
@@ -79,7 +94,7 @@ describe("Events Platfomr Backend API", () => {
         });
         test("returns a 404 not found when parameter is out of user_id range", () => {
             return (0, supertest_1.default)(app_1.default)
-                .get("/api/users/99")
+                .get("/api/users/99?password=password2")
                 .expect(404)
                 .then((response) => {
                 const { body: { msg }, } = response;
@@ -159,10 +174,10 @@ describe("Events Platfomr Backend API", () => {
                 expect(Array.isArray(users)).toBe(true);
                 users.forEach((user) => {
                     expect(user.user_id).toBe(3);
-                    expect(user.username).toBe("dev_wizard");
-                    expect(user.first_name).toBe("Charlie");
-                    expect(user.last_name).toBe("Brown");
-                    expect(user.email).toBe("charlie.brown@example.com");
+                    expect(user.username).toBe("cyber_wiz");
+                    expect(user.first_name).toBe("Olivia");
+                    expect(user.last_name).toBe("Taylor");
+                    expect(user.email).toBe("olivia.taylor@example.com");
                 });
             });
         });

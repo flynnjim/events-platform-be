@@ -15,6 +15,8 @@ const select_single_staff_models_1 = require("../models/select-single-staff.mode
 const getSingleStaff = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
     try {
         const { staff_id } = req.params;
+        // const { password } = req.query;
+        // console.log(password);
         if (!/^\d+$/.test(staff_id)) {
             return next((0, error_helper_middleware_1.createError)("Bad request", 400));
         }
@@ -22,6 +24,16 @@ const getSingleStaff = (req, res, next) => __awaiter(void 0, void 0, void 0, fun
         if (!staff) {
             return next((0, error_helper_middleware_1.notFoundError)("Staff"));
         }
+        // if (!password) {
+        //   return next(createError("Password query parameter is required", 400));
+        // }
+        // const isMatch = await bcrypt.compare(
+        //   password as string,
+        //   staff.password_hash
+        // );
+        // if (!isMatch) {
+        //   return next(createError("Invalid password", 403)); // Unauthorized error
+        // }
         res.status(200).json({ staff });
     }
     catch (error) {
