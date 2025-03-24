@@ -17,6 +17,7 @@ import {
   postRegistration,
   patchRegistration,
   getDocumentation,
+  getUserLogin,
 } from "./controllers/index.controllers";
 import { errorHandler } from "./middlewares/error-handler.middlewares";
 
@@ -43,6 +44,8 @@ app.post("/api/registration", postRegistration);
 app.patch("/api/registration", patchRegistration);
 
 app.get("/api", getDocumentation);
+
+app.post("/api/users/login", getUserLogin);
 
 app.all("*", (request, response) => {
   response
