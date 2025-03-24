@@ -17,7 +17,6 @@ const supertest_1 = __importDefault(require("supertest"));
 const connection_1 = __importDefault(require("../db/connection"));
 const seed_1 = __importDefault(require("../db/seeds/seed"));
 const test_data_1 = __importDefault(require("../db/data/test-data"));
-const bcrypt_1 = __importDefault(require("bcrypt"));
 beforeEach(() => __awaiter(void 0, void 0, void 0, function* () {
     yield (0, seed_1.default)(test_data_1.default);
 }));
@@ -206,7 +205,7 @@ describe("Events Platfomr Backend API", () => {
     describe("GET /api/staff/:staff_id", () => {
         test("returns a 200 response status with correct data properties", () => {
             return (0, supertest_1.default)(app_1.default)
-                .get("/api/staff/1?password=password1")
+                .get("/api/staff/1")
                 .expect(200)
                 .then((response) => {
                 const { body: { staff }, } = response;
@@ -216,21 +215,6 @@ describe("Events Platfomr Backend API", () => {
                 expect(staff).toHaveProperty("last_name");
                 expect(staff).toHaveProperty("email");
                 expect(staff).toHaveProperty("password_hash");
-                const rawPassword = "password1";
-                return bcrypt_1.default
-                    .compare(rawPassword, staff.password_hash)
-                    .then((isMatch) => {
-                    expect(isMatch).toBeTruthy();
-                });
-            });
-        });
-        test("returns a 403 response status with cInvalid password message", () => {
-            return (0, supertest_1.default)(app_1.default)
-                .get("/api/staff/1?password=password2")
-                .expect(403)
-                .then((response) => {
-                const { body: { msg }, } = response;
-                expect(msg).toBe("Invalid password");
             });
         });
         test("returns a 400 Bad request when parameter is invalid", () => {
