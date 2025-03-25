@@ -16,7 +16,7 @@ exports.selectRegisteredUsers = void 0;
 const connection_1 = __importDefault(require("../db/connection"));
 const selectRegisteredUsers = (event_id) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const { rows } = yield connection_1.default.query("SELECT users.user_id, users.username, users.first_name, users.last_name, users.email FROM registration JOIN users ON registration.user_id = users.user_id WHERE registration.event_id = $1;", [event_id]);
+        const { rows } = yield connection_1.default.query("SELECT users.user_id, users.username, users.first_name, users.last_name, users.email FROM registration JOIN users ON registration.user_id = users.user_id WHERE registration.event_id = $1 AND registration.status = 'Confirmed';", [event_id]);
         return rows.length > 0 ? rows : null;
     }
     catch (error) {

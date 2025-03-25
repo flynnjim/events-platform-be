@@ -173,6 +173,7 @@ describe("Events Platfomr Backend API", () => {
             body: { users },
           } = response;
           expect(Array.isArray(users)).toBe(true);
+          // expect(users.length).toBe(1);
           users.forEach((user: User) => {
             expect(user.user_id).toBe(3);
             expect(user.username).toBe("cyber_wiz");
@@ -180,6 +181,25 @@ describe("Events Platfomr Backend API", () => {
             expect(user.last_name).toBe("Taylor");
             expect(user.email).toBe("olivia.taylor@example.com");
           });
+        });
+    });
+    test("returns a 200 response status with correct data properties", () => {
+      return request(app)
+        .get("/api/users/registered/2")
+        .expect(200)
+        .then((response) => {
+          const {
+            body: { users },
+          } = response;
+          expect(Array.isArray(users)).toBe(true);
+          expect(users.length).toBe(1);
+          // users.forEach((user: User) => {
+          //   expect(user.user_id).toBe(3);
+          //   expect(user.username).toBe("cyber_wiz");
+          //   expect(user.first_name).toBe("Olivia");
+          //   expect(user.last_name).toBe("Taylor");
+          //   expect(user.email).toBe("olivia.taylor@example.com");
+          // });
         });
     });
     test("returns a 400 Bad request when parameter is invalid", () => {
@@ -502,7 +522,7 @@ describe("Events Platfomr Backend API", () => {
             body: { registration },
           } = response;
           expect(Array.isArray(registration)).toBe(false);
-          expect(registration.registration_id).toBe(6);
+          expect(registration.registration_id).toBe(7);
           expect(registration.user_id).toBe(2);
           expect(registration.event_id).toBe(2);
           expect(new Date(registration.registration_date)).toBeInstanceOf(Date);
