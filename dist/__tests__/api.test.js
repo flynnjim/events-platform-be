@@ -723,4 +723,27 @@ describe("Events Platfomr Backend API", () => {
             });
         });
     });
+    describe("GET /api/events", () => {
+        test("returns a 200 response status with correct data properties", () => {
+            return (0, supertest_1.default)(app_1.default)
+                .get("/api/events?category=Tech")
+                .expect(200)
+                .then((response) => {
+                const { body: { events }, } = response;
+                expect(Array.isArray(events)).toBe(true);
+                events.forEach((event) => {
+                    expect(event.event_type).toBe("Tech");
+                });
+            });
+        });
+        test("returns a 404 response status with error message for invlid category", () => {
+            return (0, supertest_1.default)(app_1.default)
+                .get("/api/events?category=food")
+                .expect(400)
+                .then((response) => {
+                const { body: { msg }, } = response;
+                expect(msg).toBe("Invalid category selected");
+            });
+        });
+    });
 });
