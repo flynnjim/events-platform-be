@@ -17,10 +17,10 @@ const connection_1 = __importDefault(require("../db/connection"));
 const error_helper_middleware_1 = require("../middlewares/error-helper.middleware");
 const updateRegistration = (body) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const insertTuple = [body.status, body.registration_id];
-        const { rows } = yield connection_1.default.query("UPDATE registration SET status = $1 WHERE registration_id = $2 RETURNING *;", insertTuple);
+        const insertTuple = [body.status, body.user_id];
+        const { rows } = yield connection_1.default.query("UPDATE registration SET status = $1 WHERE user_id = $2 RETURNING *;", insertTuple);
         if (rows.length === 0) {
-            throw (0, error_helper_middleware_1.createError)(`Registration with ID ${body.registration_id} not found.`, 404);
+            throw (0, error_helper_middleware_1.createError)(`User with ID ${body.user_id} not found.`, 404);
         }
         return rows[0];
     }
