@@ -513,7 +513,7 @@ describe("Events Platfomr Backend API", () => {
     describe("PATCH /api/registration", () => {
         test("returns registration object updated with passed event body information", () => {
             const body = {
-                registration_id: 1,
+                user_id: 3,
                 status: "Cancelled",
             };
             return (0, supertest_1.default)(app_1.default)
@@ -531,7 +531,7 @@ describe("Events Platfomr Backend API", () => {
         });
         test("returns a 404 if body contains user_id without corresponding entry", () => {
             const body = {
-                registration_id: 99,
+                user_id: 99,
                 status: "Cancelled",
             };
             return (0, supertest_1.default)(app_1.default)
@@ -540,7 +540,7 @@ describe("Events Platfomr Backend API", () => {
                 .expect(404)
                 .then((response) => {
                 const { body: { msg }, } = response;
-                expect(msg).toEqual("Registration with ID 99 not found.");
+                expect(msg).toEqual("User with ID 99 not found.");
             });
         });
         test("returns a 400 if body is not in correct format", () => {

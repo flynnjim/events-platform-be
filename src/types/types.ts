@@ -123,7 +123,5 @@ export const isValidRegistrationBody = (body: any): body is Registration => {
 };
 
 export const isValidRegistrationPatch = (body: any): body is Registration => {
-  return (
-    typeof body.registration_id === "number" && typeof body.status === "string"
-  );
+  return typeof body.user_id === "number" && typeof body.status === "string";
 };

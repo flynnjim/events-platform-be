@@ -37,6 +37,6 @@ const isValidRegistrationBody = (body) => {
 };
 exports.isValidRegistrationBody = isValidRegistrationBody;
 const isValidRegistrationPatch = (body) => {
-    return (typeof body.registration_id === "number" && typeof body.status === "string");
+    return typeof body.user_id === "number" && typeof body.status === "string";
 };
 exports.isValidRegistrationPatch = isValidRegistrationPatch;
