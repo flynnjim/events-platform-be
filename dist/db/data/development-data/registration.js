@@ -424,7 +424,7 @@ const registrationData = [
     {
         registration_id: 61,
         user_id: 2,
-        event_id: 1,
+        event_id: 7,
         registration_date: 1751302800000,
         status: "Cancelled",
     },

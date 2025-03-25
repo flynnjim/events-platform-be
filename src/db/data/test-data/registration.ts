@@ -36,6 +36,13 @@ const registrationData: Registration[] = [
     registration_date: 1767266400000,
     status: "Cancelled",
   },
+  {
+    registration_id: 6,
+    user_id: 2,
+    event_id: 2,
+    registration_date: 1751388600000,
+    status: "Confirmed",
+  },
 ];
 
 export default registrationData;
