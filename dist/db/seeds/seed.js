@@ -50,7 +50,8 @@ const seed = (_a) => __awaiter(void 0, [_a], void 0, function* ({ eventData, use
       address VARCHAR NOT NULL,
       created_by INT REFERENCES staff(staff_id),
       start_time TIMESTAMP DEFAULT NOW(),
-      end_time TIMESTAMP DEFAULT NOW()
+      end_time TIMESTAMP DEFAULT NOW(),
+      image VARCHAR NOT NULL
     );
   `);
     yield connection_1.default.query(`
@@ -77,7 +78,7 @@ const seed = (_a) => __awaiter(void 0, [_a], void 0, function* ({ eventData, use
         password_hash,
     ]));
     yield connection_1.default.query(insertStaffQuery);
-    const insertEventsQuery = (0, pg_format_1.default)(`INSERT INTO events (title, description, event_type, details, location, address, created_by, start_time, end_time) VALUES %L RETURNING *;`, eventData.map((event) => {
+    const insertEventsQuery = (0, pg_format_1.default)(`INSERT INTO events (title, description, event_type, details, location, address, created_by, start_time, end_time, image) VALUES %L RETURNING *;`, eventData.map((event) => {
         const convertedEvent = (0, utils_1.convertTimestampToDate)(event);
         return [
             convertedEvent.title,
@@ -89,6 +90,8 @@ const seed = (_a) => __awaiter(void 0, [_a], void 0, function* ({ eventData, use
             convertedEvent.created_by,
             convertedEvent.start_time,
             convertedEvent.end_time,
+            convertedEvent.image ||
+                "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743084248/computer_okaake.jpg",
         ];
     }));
     yield connection_1.default.query(insertEventsQuery);
