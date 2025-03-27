@@ -1,10 +1,11 @@
 import db from "../db/connection";
-
 import { Event } from "../types/types";
 import { createError } from "../middlewares/error-helper.middleware";
 import { PatchEventBody } from "../types/types";
 
 export const updateEvent = async (body: Event): Promise<Event> => {
+  const defaultImage =
+    "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743084248/computer_okaake.jpg";
   try {
     const values: PatchEventBody = [
       body.title,
@@ -16,7 +17,7 @@ export const updateEvent = async (body: Event): Promise<Event> => {
       body.created_by,
       new Date(body.start_time).toISOString(),
       new Date(body.end_time).toISOString(),
-      body.image,
+      body.image || defaultImage,
       body.event_id,
     ];
 

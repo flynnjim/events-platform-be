@@ -11,10 +11,10 @@ export const insertEvent = async (
   if (isNaN(staffId)) {
     throw createError("Invalid staff id", 400);
   }
-
+  const defaultImage =
+    "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743084248/computer_okaake.jpg";
   try {
     const convertedEvent = convertTimestampToDate(newEvent);
-
     const insertTuple: InsertEventBody = [
       convertedEvent.title,
       convertedEvent.description,
@@ -25,17 +25,14 @@ export const insertEvent = async (
       staffId,
       convertedEvent.start_time.toISOString(),
       convertedEvent.end_time.toISOString(),
-      convertedEvent.image,
+      convertedEvent.image || defaultImage,
     ];
-
     const { rows } = await db.query<Event>(
       "INSERT INTO events (title, description, event_type, details, location, address, created_by, start_time, end_time, image) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING *;",
       insertTuple
     );
-
     return rows.length > 0 ? rows[0] : null;
   } catch (error: any) {
-    // foreign key violation
     if (error.code === "23503") {
       throw createError(`Staff member with ID ${staffId} does not exist.`, 404);
     }

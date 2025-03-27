@@ -21,6 +21,7 @@ const insertEvent = (created_by, newEvent) => __awaiter(void 0, void 0, void 0, 
     if (isNaN(staffId)) {
         throw (0, error_helper_middleware_1.createError)("Invalid staff id", 400);
     }
+    const defaultImage = "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743084248/computer_okaake.jpg";
     try {
         const convertedEvent = (0, utils_1.convertTimestampToDate)(newEvent);
         const insertTuple = [
@@ -33,13 +34,12 @@ const insertEvent = (created_by, newEvent) => __awaiter(void 0, void 0, void 0, 
             staffId,
             convertedEvent.start_time.toISOString(),
             convertedEvent.end_time.toISOString(),
-            convertedEvent.image,
+            convertedEvent.image || defaultImage,
         ];
         const { rows } = yield connection_1.default.query("INSERT INTO events (title, description, event_type, details, location, address, created_by, start_time, end_time, image) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING *;", insertTuple);
         return rows.length > 0 ? rows[0] : null;
     }
     catch (error) {
-        // foreign key violation
         if (error.code === "23503") {
             throw (0, error_helper_middleware_1.createError)(`Staff member with ID ${staffId} does not exist.`, 404);
         }
