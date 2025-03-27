@@ -16,11 +16,12 @@ export const updateEvent = async (body: Event): Promise<Event> => {
       body.created_by,
       new Date(body.start_time).toISOString(),
       new Date(body.end_time).toISOString(),
+      body.image,
       body.event_id,
     ];
 
     const { rows } = await db.query<Event>(
-      "UPDATE events SET title = $1, description = $2, event_type = $3, details = $4, location = $5, address = $6, created_by = $7, start_time = $8, end_time = $9 WHERE event_id = $10 RETURNING *;",
+      "UPDATE events SET title = $1, description = $2, event_type = $3, details = $4, location = $5, address = $6, created_by = $7, start_time = $8, end_time = $9, image = $10 WHERE event_id = $11 RETURNING *;",
       values
     );
 

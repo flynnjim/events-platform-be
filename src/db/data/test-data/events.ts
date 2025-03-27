@@ -14,6 +14,8 @@ const eventData: Event[] = [
     created_by: 2,
     start_time: 1755277200000,
     end_time: 1755306000000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743083955/tech-conference-25_f05doj.png",
   },
   {
     event_id: 2,
@@ -28,6 +30,8 @@ const eventData: Event[] = [
     created_by: 4,
     start_time: 1757421600000,
     end_time: 1757596800000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743084248/computer_okaake.jpg",
   },
   {
     event_id: 3,
@@ -43,6 +47,8 @@ const eventData: Event[] = [
     created_by: 2,
     start_time: 1759711200000,
     end_time: 1759725600000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743084238/artifical-intelligence_grgwg4.jpg",
   },
   {
     event_id: 4,
@@ -58,6 +64,8 @@ const eventData: Event[] = [
     created_by: 4,
     start_time: 1763665800000,
     end_time: 1763694600000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743084238/artifical-intelligence_grgwg4.jpg",
   },
   {
     event_id: 5,
@@ -72,6 +80,8 @@ const eventData: Event[] = [
     created_by: 2,
     start_time: 1764618000000,
     end_time: 1764646800000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743084225/cloud_bmbgcc.jpg",
   },
 ];
 

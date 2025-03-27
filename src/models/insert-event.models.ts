@@ -25,10 +25,11 @@ export const insertEvent = async (
       staffId,
       convertedEvent.start_time.toISOString(),
       convertedEvent.end_time.toISOString(),
+      convertedEvent.image,
     ];
 
     const { rows } = await db.query<Event>(
-      "INSERT INTO events (title, description, event_type, details, location, address, created_by, start_time, end_time) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING *;",
+      "INSERT INTO events (title, description, event_type, details, location, address, created_by, start_time, end_time, image) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING *;",
       insertTuple
     );
 

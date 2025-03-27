@@ -27,9 +27,10 @@ const updateEvent = (body) => __awaiter(void 0, void 0, void 0, function* () {
             body.created_by,
             new Date(body.start_time).toISOString(),
             new Date(body.end_time).toISOString(),
+            body.image,
             body.event_id,
         ];
-        const { rows } = yield connection_1.default.query("UPDATE events SET title = $1, description = $2, event_type = $3, details = $4, location = $5, address = $6, created_by = $7, start_time = $8, end_time = $9 WHERE event_id = $10 RETURNING *;", values);
+        const { rows } = yield connection_1.default.query("UPDATE events SET title = $1, description = $2, event_type = $3, details = $4, location = $5, address = $6, created_by = $7, start_time = $8, end_time = $9, image = $10 WHERE event_id = $11 RETURNING *;", values);
         if (rows.length === 0) {
             throw (0, error_helper_middleware_1.createError)(`Event with ID ${body.event_id} not found.`, 404);
         }

@@ -12,7 +12,8 @@ const isValidNewEventBody = (body) => {
         typeof body.location === "object" &&
         body.location !== null &&
         typeof body.location.latitude === "number" &&
-        typeof body.location.longitude === "number");
+        typeof body.location.longitude === "number" &&
+        typeof body.image === "string");
 };
 exports.isValidNewEventBody = isValidNewEventBody;
 const isValidEventPatch = (body) => {
@@ -26,7 +27,8 @@ const isValidEventPatch = (body) => {
         typeof body.location === "object" &&
         body.location !== null &&
         typeof body.location.latitude === "number" &&
-        typeof body.location.longitude === "number");
+        typeof body.location.longitude === "number" &&
+        typeof body.image === "string");
 };
 exports.isValidEventPatch = isValidEventPatch;
 const isValidRegistrationBody = (body) => {

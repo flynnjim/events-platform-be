@@ -33,8 +33,9 @@ const insertEvent = (created_by, newEvent) => __awaiter(void 0, void 0, void 0, 
             staffId,
             convertedEvent.start_time.toISOString(),
             convertedEvent.end_time.toISOString(),
+            convertedEvent.image,
         ];
-        const { rows } = yield connection_1.default.query("INSERT INTO events (title, description, event_type, details, location, address, created_by, start_time, end_time) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9) RETURNING *;", insertTuple);
+        const { rows } = yield connection_1.default.query("INSERT INTO events (title, description, event_type, details, location, address, created_by, start_time, end_time, image) VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10) RETURNING *;", insertTuple);
         return rows.length > 0 ? rows[0] : null;
     }
     catch (error) {

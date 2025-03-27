@@ -18,6 +18,7 @@ export interface Event {
   created_by: number;
   start_time: number;
   end_time: number;
+  image: string;
 }
 
 export interface Registration {
@@ -52,6 +53,7 @@ export interface NewEventBody {
   address: string;
   start_time: number;
   end_time: number;
+  image: string;
 }
 
 export type InsertEventBody = [
@@ -62,6 +64,7 @@ export type InsertEventBody = [
   { latitude: number; longitude: number },
   string,
   number,
+  string,
   string,
   string
 ];
@@ -74,6 +77,7 @@ export type PatchEventBody = [
   { latitude: number; longitude: number },
   string,
   number,
+  string,
   string,
   string,
   number
@@ -93,7 +97,8 @@ export const isValidNewEventBody = (body: any): body is NewEventBody => {
     typeof body.location === "object" &&
     body.location !== null &&
     typeof body.location.latitude === "number" &&
-    typeof body.location.longitude === "number"
+    typeof body.location.longitude === "number" &&
+    typeof body.image === "string"
   );
 };
 
@@ -109,7 +114,8 @@ export const isValidEventPatch = (body: any): body is Event => {
     typeof body.location === "object" &&
     body.location !== null &&
     typeof body.location.latitude === "number" &&
-    typeof body.location.longitude === "number"
+    typeof body.location.longitude === "number" &&
+    typeof body.image === "string"
   );
 };
 

@@ -16,7 +16,7 @@ exports.selectSingleEvent = void 0;
 const connection_1 = __importDefault(require("../db/connection"));
 const selectSingleEvent = (event_id) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const { rows } = yield connection_1.default.query("SELECT event_id, title, description, event_type, details, location, address, created_by, start_time, end_time FROM events WHERE event_id = $1", [event_id]);
+        const { rows } = yield connection_1.default.query("SELECT event_id, title, description, event_type, details, location, address, created_by, start_time, end_time, image FROM events WHERE event_id = $1", [event_id]);
         return rows.length > 0 ? rows[0] : null;
     }
     catch (error) {

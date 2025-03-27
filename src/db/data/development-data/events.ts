@@ -14,6 +14,8 @@ const eventData: Event[] = [
     created_by: 2,
     start_time: 1740291600000,
     end_time: 1740316800000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743086931/conference_gxj9aq.jpg",
   },
   {
     event_id: 2,
@@ -29,6 +31,8 @@ const eventData: Event[] = [
     created_by: 3,
     start_time: 1741303200000,
     end_time: 1741322400000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743086960/conference-2_avymdl.jpg",
   },
   {
     event_id: 3,
@@ -43,6 +47,8 @@ const eventData: Event[] = [
     created_by: 4,
     start_time: 1741909200000,
     end_time: 1741928400000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743086923/digital-art_ldeevh.jpg",
   },
   {
     event_id: 4,
@@ -57,6 +63,8 @@ const eventData: Event[] = [
     created_by: 5,
     start_time: 1745051400000,
     end_time: 1745070600000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743086918/enterprise_a2j1lr.jpg",
   },
   {
     event_id: 5,
@@ -72,6 +80,8 @@ const eventData: Event[] = [
     created_by: 2,
     start_time: 1748235600000,
     end_time: 1748254800000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743086931/conference_gxj9aq.jpg",
   },
   {
     event_id: 6,
@@ -86,6 +96,8 @@ const eventData: Event[] = [
     created_by: 6,
     start_time: 1740568800000,
     end_time: 1740579600000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743084316/computer_dpyyif.jpg",
   },
   {
     event_id: 7,
@@ -101,6 +113,8 @@ const eventData: Event[] = [
     created_by: 7,
     start_time: 1741007400000,
     end_time: 1741018200000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743086954/tech-pub-quiz_wq0ato.jpg",
   },
   {
     event_id: 8,
@@ -115,6 +129,8 @@ const eventData: Event[] = [
     created_by: 8,
     start_time: 1749799200000,
     end_time: 1749817200000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743086950/women-tech_nlzwck.jpg",
   },
   {
     event_id: 9,
@@ -129,6 +145,8 @@ const eventData: Event[] = [
     created_by: 3,
     start_time: 1742724000000,
     end_time: 1742743200000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743084264/data_drdgv9.jpg",
   },
   {
     event_id: 10,
@@ -144,6 +162,8 @@ const eventData: Event[] = [
     created_by: 9,
     start_time: 1744260600000,
     end_time: 1744279800000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743086922/VR_bw71km.jpg",
   },
   {
     event_id: 11,
@@ -158,6 +178,8 @@ const eventData: Event[] = [
     created_by: 4,
     start_time: 1747572000000,
     end_time: 1747586400000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743084279/artifical-intelligence_gmc3qt.jpg",
   },
   {
     event_id: 12,
@@ -172,6 +194,8 @@ const eventData: Event[] = [
     created_by: 5,
     start_time: 1741252800000,
     end_time: 1741263600000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743086918/startup-pitch_od1st9.jpg",
   },
   {
     event_id: 13,
@@ -187,6 +211,8 @@ const eventData: Event[] = [
     created_by: 6,
     start_time: 1741201200000,
     end_time: 1741212000000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743086960/conference-2_avymdl.jpg",
   },
   {
     event_id: 14,
@@ -201,6 +227,8 @@ const eventData: Event[] = [
     created_by: 7,
     start_time: 1742661000000,
     end_time: 1742677800000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743086932/code-and-coffee_hw4nzn.jpg",
   },
   {
     event_id: 15,
@@ -215,6 +243,8 @@ const eventData: Event[] = [
     created_by: 8,
     start_time: 1745325600000,
     end_time: 1745332800000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743086932/code-and-coffee_hw4nzn.jpg",
   },
   {
     event_id: 16,
@@ -229,6 +259,8 @@ const eventData: Event[] = [
     created_by: 9,
     start_time: 1746198000000,
     end_time: 1746213600000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743086926/digital-art-3_soj8bx.jpg",
   },
   {
     event_id: 17,
@@ -243,6 +275,8 @@ const eventData: Event[] = [
     created_by: 2,
     start_time: 1749802800000,
     end_time: 1749822000000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743086931/conference_gxj9aq.jpg",
   },
   {
     event_id: 18,
@@ -258,6 +292,8 @@ const eventData: Event[] = [
     created_by: 3,
     start_time: 1741596000000,
     end_time: 1741606800000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743086954/tech-pub-quiz_wq0ato.jpg",
   },
   {
     event_id: 19,
@@ -272,6 +308,8 @@ const eventData: Event[] = [
     created_by: 4,
     start_time: 1751826000000,
     end_time: 1751841600000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743086960/conference-2_avymdl.jpg",
   },
   {
     event_id: 20,
@@ -287,6 +325,8 @@ const eventData: Event[] = [
     created_by: 5,
     start_time: 1748946600000,
     end_time: 1748957400000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743086918/enterprise_a2j1lr.jpg",
   },
   {
     event_id: 21,
@@ -302,6 +342,8 @@ const eventData: Event[] = [
     created_by: 2,
     start_time: 1741018800000,
     end_time: 1741033200000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743087879/culture-festival_wpj9gl.jpg",
   },
   {
     event_id: 22,
@@ -316,6 +358,8 @@ const eventData: Event[] = [
     created_by: 3,
     start_time: 1741653600000,
     end_time: 1741664400000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743087901/contemporary-art_dxwq3p.jpg",
   },
   {
     event_id: 23,
@@ -330,6 +374,8 @@ const eventData: Event[] = [
     created_by: 4,
     start_time: 1742288400000,
     end_time: 1742302800000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743087874/heritage_o8ij7c.jpg",
   },
   {
     event_id: 24,
@@ -345,6 +391,8 @@ const eventData: Event[] = [
     created_by: 5,
     start_time: 1742923200000,
     end_time: 1742930400000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743087895/folk-dance_kg2jtb.jpg",
   },
   {
     event_id: 25,
@@ -359,6 +407,8 @@ const eventData: Event[] = [
     created_by: 6,
     start_time: 1743558000000,
     end_time: 1743565200000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743087896/poetry_rz9khm.jpg",
   },
   {
     event_id: 26,
@@ -374,6 +424,8 @@ const eventData: Event[] = [
     created_by: 7,
     start_time: 1744192800000,
     end_time: 1744200000000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743087879/jazz-blues_rrhkkj.jpg",
   },
   {
     event_id: 27,
@@ -388,6 +440,8 @@ const eventData: Event[] = [
     created_by: 8,
     start_time: 1744827600000,
     end_time: 1744842000000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743087911/reenactment_rbkiw4.jpg",
   },
   {
     event_id: 28,
@@ -402,6 +456,8 @@ const eventData: Event[] = [
     created_by: 3,
     start_time: 1745462400000,
     end_time: 1745473200000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743087934/history-stones_rdhlnt.jpg",
   },
   {
     event_id: 29,
@@ -417,6 +473,8 @@ const eventData: Event[] = [
     created_by: 9,
     start_time: 1746097200000,
     end_time: 1746111600000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743087930/modern-art_nnrcb7.jpg",
   },
   {
     event_id: 30,
@@ -431,6 +489,8 @@ const eventData: Event[] = [
     created_by: 4,
     start_time: 1746732000000,
     end_time: 1746746400000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743087892/culinary-culture_mzeade.jpg",
   },
   {
     event_id: 31,
@@ -445,6 +505,8 @@ const eventData: Event[] = [
     created_by: 5,
     start_time: 1747366800000,
     end_time: 1747374000000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743087892/culinary-culture_mzeade.jpg",
   },
   {
     event_id: 32,
@@ -460,6 +522,8 @@ const eventData: Event[] = [
     created_by: 6,
     start_time: 1748001600000,
     end_time: 1748008800000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743087878/literary-culture_zncine.jpg",
   },
   {
     event_id: 33,
@@ -474,6 +538,8 @@ const eventData: Event[] = [
     created_by: 7,
     start_time: 1748636400000,
     end_time: 1748650800000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743087872/avant-garde_fjbmtm.jpg",
   },
   {
     event_id: 34,
@@ -488,6 +554,8 @@ const eventData: Event[] = [
     created_by: 8,
     start_time: 1749271200000,
     end_time: 1749282000000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743087930/modern-art_nnrcb7.jpg",
   },
   {
     event_id: 35,
@@ -503,6 +571,8 @@ const eventData: Event[] = [
     created_by: 9,
     start_time: 1749906000000,
     end_time: 1749920400000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743087879/culture-festival_wpj9gl.jpg",
   },
   {
     event_id: 36,
@@ -517,6 +587,8 @@ const eventData: Event[] = [
     created_by: 2,
     start_time: 1750540800000,
     end_time: 1750555200000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743087890/cinema_l2xqu6.jpg",
   },
   {
     event_id: 37,
@@ -532,6 +604,8 @@ const eventData: Event[] = [
     created_by: 3,
     start_time: 1751175600000,
     end_time: 1751190000000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743087916/folklore_q3ikva.jpg",
   },
   {
     event_id: 38,
@@ -547,6 +621,8 @@ const eventData: Event[] = [
     created_by: 4,
     start_time: 1751810400000,
     end_time: 1751821200000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743087879/jazz-blues_rrhkkj.jpg",
   },
   {
     event_id: 39,
@@ -561,6 +637,8 @@ const eventData: Event[] = [
     created_by: 5,
     start_time: 1752445200000,
     end_time: 1752456000000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743086960/conference-2_avymdl.jpg",
   },
   {
     event_id: 40,
@@ -575,6 +653,8 @@ const eventData: Event[] = [
     created_by: 6,
     start_time: 1753080000000,
     end_time: 1753090800000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743087892/culinary-culture_mzeade.jpg",
   },
   {
     event_id: 41,
@@ -589,6 +669,8 @@ const eventData: Event[] = [
     created_by: 2,
     start_time: 1740116400000,
     end_time: 1740127200000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743089406/run-6_dyaq8v.jpg",
   },
   {
     event_id: 42,
@@ -603,6 +685,8 @@ const eventData: Event[] = [
     created_by: 3,
     start_time: 1740202800000,
     end_time: 1740217200000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743089389/notss-county_ueyznq.jpg",
   },
   {
     event_id: 43,
@@ -617,6 +701,8 @@ const eventData: Event[] = [
     created_by: 4,
     start_time: 1740300000000,
     end_time: 1740310800000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743089387/nott-forest_pkaqlz.jpg",
   },
   {
     event_id: 44,
@@ -631,6 +717,8 @@ const eventData: Event[] = [
     created_by: 5,
     start_time: 1740405600000,
     end_time: 1740412800000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743089407/run-5_knmatl.jpg",
   },
   {
     event_id: 45,
@@ -645,6 +733,8 @@ const eventData: Event[] = [
     created_by: 6,
     start_time: 1740502000000,
     end_time: 1740509200000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743089406/run-6_dyaq8v.jpg",
   },
   {
     event_id: 46,
@@ -659,6 +749,8 @@ const eventData: Event[] = [
     created_by: 7,
     start_time: 1740598400000,
     end_time: 1740603800000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743089407/nature-yoga_hyvblz.jpg",
   },
   {
     event_id: 47,
@@ -673,6 +765,8 @@ const eventData: Event[] = [
     created_by: 8,
     start_time: 1740694800000,
     end_time: 1740712800000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743089397/eSports_vnk00n.jpg",
   },
   {
     event_id: 48,
@@ -686,6 +780,8 @@ const eventData: Event[] = [
     created_by: 9,
     start_time: 1740781200000,
     end_time: 1740795600000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743089381/horse-riding_jju3dt.jpg",
   },
   {
     event_id: 49,
@@ -701,6 +797,8 @@ const eventData: Event[] = [
     created_by: 2,
     start_time: 1740867600000,
     end_time: 1740882000000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743089403/watersports_cgwbok.jpg",
   },
   {
     event_id: 50,
@@ -715,6 +813,8 @@ const eventData: Event[] = [
     created_by: 3,
     start_time: 1740954000000,
     end_time: 1740968400000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743089387/mixed-sport_tjurgi.jpg",
   },
   {
     event_id: 51,
@@ -730,6 +830,8 @@ const eventData: Event[] = [
     created_by: 4,
     start_time: 1741040400000,
     end_time: 1741051200000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743089380/hockey_kfht8g.jpg",
   },
   {
     event_id: 52,
@@ -745,6 +847,8 @@ const eventData: Event[] = [
     created_by: 5,
     start_time: 1741126800000,
     end_time: 1741137600000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743089444/greyhond_kixt8g.jpg",
   },
   {
     event_id: 53,
@@ -759,6 +863,8 @@ const eventData: Event[] = [
     created_by: 6,
     start_time: 1741213200000,
     end_time: 1741234800000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743089381/cricket_vqvs3v.jpg",
   },
   {
     event_id: 54,
@@ -773,6 +879,8 @@ const eventData: Event[] = [
     created_by: 7,
     start_time: 1741299600000,
     end_time: 1741310400000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743089387/nott-forest_pkaqlz.jpg",
   },
   {
     event_id: 55,
@@ -786,6 +894,8 @@ const eventData: Event[] = [
     created_by: 8,
     start_time: 1741386000000,
     end_time: 1741393200000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743089418/urban-run_addtcz.jpg",
   },
   {
     event_id: 56,
@@ -800,6 +910,8 @@ const eventData: Event[] = [
     created_by: 9,
     start_time: 1741472400000,
     end_time: 1741483200000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743089389/notss-county_ueyznq.jpg",
   },
   {
     event_id: 57,
@@ -814,6 +926,8 @@ const eventData: Event[] = [
     created_by: 2,
     start_time: 1741558800000,
     end_time: 1741573200000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743089387/nott-forest_pkaqlz.jpg",
   },
   {
     event_id: 58,
@@ -829,6 +943,8 @@ const eventData: Event[] = [
     created_by: 3,
     start_time: 1741645200000,
     end_time: 1741652400000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743089403/watersports_cgwbok.jpg",
   },
   {
     event_id: 59,
@@ -844,6 +960,8 @@ const eventData: Event[] = [
     created_by: 4,
     start_time: 1741731600000,
     end_time: 1741742400000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743089380/hockey_kfht8g.jpg",
   },
   {
     event_id: 60,
@@ -858,6 +976,8 @@ const eventData: Event[] = [
     created_by: 5,
     start_time: 1741818000000,
     end_time: 1741832400000,
+    image:
+      "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743089446/run-3_ngmygc.jpg",
   },
 ];
 

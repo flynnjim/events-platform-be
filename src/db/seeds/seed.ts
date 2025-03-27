@@ -50,7 +50,8 @@ const seed = async ({
       address VARCHAR NOT NULL,
       created_by INT REFERENCES staff(staff_id),
       start_time TIMESTAMP DEFAULT NOW(),
-      end_time TIMESTAMP DEFAULT NOW()
+      end_time TIMESTAMP DEFAULT NOW(),
+      image VARCHAR NOT NULL
     );
   `);
 
@@ -90,7 +91,7 @@ const seed = async ({
   await db.query(insertStaffQuery);
 
   const insertEventsQuery = format(
-    `INSERT INTO events (title, description, event_type, details, location, address, created_by, start_time, end_time) VALUES %L RETURNING *;`,
+    `INSERT INTO events (title, description, event_type, details, location, address, created_by, start_time, end_time, image) VALUES %L RETURNING *;`,
     eventData.map((event) => {
       const convertedEvent = convertTimestampToDate(event);
       return [
@@ -103,6 +104,8 @@ const seed = async ({
         convertedEvent.created_by,
         convertedEvent.start_time,
         convertedEvent.end_time,
+        convertedEvent.image ||
+          "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743084248/computer_okaake.jpg",
       ];
     })
   );

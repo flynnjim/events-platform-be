@@ -4,7 +4,6 @@ import db from "../db/connection";
 import seed from "../db/seeds/seed";
 import testData from "../db/data/test-data";
 import { User, Event, Staff } from "../types/types";
-import bcrypt from "bcrypt";
 
 beforeEach(async () => {
   await seed(testData);
@@ -109,6 +108,7 @@ describe("Events Platfomr Backend API", () => {
             expect(event).toHaveProperty("created_by");
             expect(event).toHaveProperty("start_time");
             expect(event).toHaveProperty("end_time");
+            expect(event).toHaveProperty("image");
           });
         });
     });
@@ -136,6 +136,9 @@ describe("Events Platfomr Backend API", () => {
             latitude: 37.7749,
             longitude: -122.4194,
           });
+          expect(event.image).toBe(
+            "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743083955/tech-conference-25_f05doj.png"
+          );
           expect(new Date(event.start_time)).toBeInstanceOf(Date);
           expect(new Date(event.end_time)).toBeInstanceOf(Date);
         });
@@ -193,13 +196,6 @@ describe("Events Platfomr Backend API", () => {
           } = response;
           expect(Array.isArray(users)).toBe(true);
           expect(users.length).toBe(1);
-          // users.forEach((user: User) => {
-          //   expect(user.user_id).toBe(3);
-          //   expect(user.username).toBe("cyber_wiz");
-          //   expect(user.first_name).toBe("Olivia");
-          //   expect(user.last_name).toBe("Taylor");
-          //   expect(user.email).toBe("olivia.taylor@example.com");
-          // });
         });
     });
     test("returns a 400 Bad request when parameter is invalid", () => {
@@ -300,6 +296,8 @@ describe("Events Platfomr Backend API", () => {
         address: "Moscone Center, 747 Howard St, San Francisco, CA 94103, USA",
         start_time: 1755277200000,
         end_time: 1755306000000,
+        image:
+          "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743084225/cloud_bmbgcc.jpg",
       };
       return request(app)
         .post("/api/events/1")
@@ -325,6 +323,9 @@ describe("Events Platfomr Backend API", () => {
             latitude: 37.7749,
             longitude: -122.4194,
           });
+          expect(event.image).toBe(
+            "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743084225/cloud_bmbgcc.jpg"
+          );
           expect(new Date(event.start_time)).toBeInstanceOf(Date);
           expect(new Date(event.end_time)).toBeInstanceOf(Date);
         });
@@ -341,6 +342,8 @@ describe("Events Platfomr Backend API", () => {
         address: "Moscone Center, 747 Howard St, San Francisco, CA 94103, USA",
         start_time: 1755277200000,
         end_time: 1755306000000,
+        image:
+          "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743084225/cloud_bmbgcc.jpg",
       };
       return request(app)
         .post("/api/events/99")
@@ -380,6 +383,8 @@ describe("Events Platfomr Backend API", () => {
         address: "Moscone Center, 747 Howard St, San Francisco, CA 94103, USA",
         start_time: 1755277200000,
         end_time: 1755306000000,
+        image:
+          "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743084225/cloud_bmbgcc.jpg",
       };
       return request(app)
         .post("/api/events/nine")
@@ -408,6 +413,8 @@ describe("Events Platfomr Backend API", () => {
         created_by: 1,
         start_time: 1755277200000,
         end_time: 1755306000000,
+        image:
+          "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743083955/tech-conference-25_f05doj.png",
       };
       return request(app)
         .patch("/api/events")
@@ -433,6 +440,9 @@ describe("Events Platfomr Backend API", () => {
             latitude: 37.7749,
             longitude: -122.4194,
           });
+          expect(event.image).toBe(
+            "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743083955/tech-conference-25_f05doj.png"
+          );
           expect(new Date(event.start_time)).toBeInstanceOf(Date);
           expect(new Date(event.end_time)).toBeInstanceOf(Date);
         });
@@ -451,6 +461,8 @@ describe("Events Platfomr Backend API", () => {
         created_by: 99,
         start_time: 1755277200000,
         end_time: 1755306000000,
+        image:
+          "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743083955/tech-conference-25_f05doj.png",
       };
       return request(app)
         .patch("/api/events")
@@ -477,6 +489,8 @@ describe("Events Platfomr Backend API", () => {
         created_by: 1,
         start_time: 1755277200000,
         end_time: 1755306000000,
+        image:
+          "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743083955/tech-conference-25_f05doj.png",
       };
       return request(app)
         .patch("/api/events")

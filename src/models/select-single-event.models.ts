@@ -7,7 +7,7 @@ export const selectSingleEvent = async (
 ): Promise<Event | null> => {
   try {
     const { rows } = await db.query<Event>(
-      "SELECT event_id, title, description, event_type, details, location, address, created_by, start_time, end_time FROM events WHERE event_id = $1",
+      "SELECT event_id, title, description, event_type, details, location, address, created_by, start_time, end_time, image FROM events WHERE event_id = $1",
       [event_id]
     );
     return rows.length > 0 ? rows[0] : null;
