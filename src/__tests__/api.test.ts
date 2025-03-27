@@ -109,6 +109,7 @@ describe("Events Platfomr Backend API", () => {
             expect(event).toHaveProperty("created_by");
             expect(event).toHaveProperty("start_time");
             expect(event).toHaveProperty("end_time");
+            expect(event).toHaveProperty("image");
           });
         });
     });
@@ -136,6 +137,9 @@ describe("Events Platfomr Backend API", () => {
             latitude: 37.7749,
             longitude: -122.4194,
           });
+          expect(event.image).toBe(
+            "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743083955/tech-conference-25_f05doj.png"
+          );
           expect(new Date(event.start_time)).toBeInstanceOf(Date);
           expect(new Date(event.end_time)).toBeInstanceOf(Date);
         });
@@ -300,6 +304,8 @@ describe("Events Platfomr Backend API", () => {
         address: "Moscone Center, 747 Howard St, San Francisco, CA 94103, USA",
         start_time: 1755277200000,
         end_time: 1755306000000,
+        image:
+          "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743084225/cloud_bmbgcc.jpg",
       };
       return request(app)
         .post("/api/events/1")
@@ -325,6 +331,9 @@ describe("Events Platfomr Backend API", () => {
             latitude: 37.7749,
             longitude: -122.4194,
           });
+          expect(event.image).toBe(
+            "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743084225/cloud_bmbgcc.jpg"
+          );
           expect(new Date(event.start_time)).toBeInstanceOf(Date);
           expect(new Date(event.end_time)).toBeInstanceOf(Date);
         });
@@ -341,6 +350,8 @@ describe("Events Platfomr Backend API", () => {
         address: "Moscone Center, 747 Howard St, San Francisco, CA 94103, USA",
         start_time: 1755277200000,
         end_time: 1755306000000,
+        image:
+          "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743084225/cloud_bmbgcc.jpg",
       };
       return request(app)
         .post("/api/events/99")
@@ -380,6 +391,8 @@ describe("Events Platfomr Backend API", () => {
         address: "Moscone Center, 747 Howard St, San Francisco, CA 94103, USA",
         start_time: 1755277200000,
         end_time: 1755306000000,
+        image:
+          "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743084225/cloud_bmbgcc.jpg",
       };
       return request(app)
         .post("/api/events/nine")
@@ -408,6 +421,8 @@ describe("Events Platfomr Backend API", () => {
         created_by: 1,
         start_time: 1755277200000,
         end_time: 1755306000000,
+        image:
+          "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743083955/tech-conference-25_f05doj.png",
       };
       return request(app)
         .patch("/api/events")
@@ -433,6 +448,9 @@ describe("Events Platfomr Backend API", () => {
             latitude: 37.7749,
             longitude: -122.4194,
           });
+          expect(event.image).toBe(
+            "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743083955/tech-conference-25_f05doj.png"
+          );
           expect(new Date(event.start_time)).toBeInstanceOf(Date);
           expect(new Date(event.end_time)).toBeInstanceOf(Date);
         });
@@ -451,6 +469,8 @@ describe("Events Platfomr Backend API", () => {
         created_by: 99,
         start_time: 1755277200000,
         end_time: 1755306000000,
+        image:
+          "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743083955/tech-conference-25_f05doj.png",
       };
       return request(app)
         .patch("/api/events")
@@ -477,6 +497,8 @@ describe("Events Platfomr Backend API", () => {
         created_by: 1,
         start_time: 1755277200000,
         end_time: 1755306000000,
+        image:
+          "https://res.cloudinary.com/dufw9aqhs/image/upload/v1743083955/tech-conference-25_f05doj.png",
       };
       return request(app)
         .patch("/api/events")
