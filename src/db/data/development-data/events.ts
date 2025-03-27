@@ -333,7 +333,7 @@ const eventData: Event[] = [
     title: "Nottingham Cultural Festival 2025",
     description:
       "A vibrant celebration of local arts, music, and cultural heritage.",
-    event_type: "Cultural",
+    event_type: "Culture",
     details:
       "Experience a day filled with live performances, art installations, and interactive workshops that showcase Nottingham's diverse cultural scene. Join community artists, musicians, and performers in celebrating tradition and innovation.",
     location: { latitude: 52.953, longitude: -1.1749 },
@@ -350,7 +350,7 @@ const eventData: Event[] = [
     title: "Contemporary Art Extravaganza",
     description:
       "An exhibition showcasing cutting-edge contemporary art and multimedia installations.",
-    event_type: "Cultural",
+    event_type: "Culture",
     details:
       "Held at Nottingham Contemporary, this event brings together local and international artists to explore modern expressions in visual art. Enjoy guided tours, artist talks, and live demonstrations.",
     location: { latitude: 52.9485, longitude: -1.161 },
@@ -366,7 +366,7 @@ const eventData: Event[] = [
     title: "Heritage & History Forum",
     description:
       "A discussion forum exploring Nottingham's rich historical tapestry and cultural heritage.",
-    event_type: "Cultural",
+    event_type: "Culture",
     details:
       "Join historians, local experts, and community leaders as they delve into the stories and legacies that have shaped Nottingham. The forum includes keynote speeches, panel discussions, and interactive Q&A sessions.",
     location: { latitude: 52.952, longitude: -1.15 },
@@ -382,7 +382,7 @@ const eventData: Event[] = [
     title: "International Folk Dance Evening",
     description:
       "A lively evening celebrating traditional dance from around the world.",
-    event_type: "Cultural",
+    event_type: "Culture",
     details:
       "Held at Trent Conference Centre, enjoy performances by folk dance troupes and learn the steps of traditional dances. The event is open to all ages and skill levels, encouraging community participation.",
     location: { latitude: 52.954, longitude: -1.151 },
@@ -399,7 +399,7 @@ const eventData: Event[] = [
     title: "Poetry & Prose Night",
     description:
       "An intimate evening of spoken word, poetry readings, and storytelling.",
-    event_type: "Cultural",
+    event_type: "Culture",
     details:
       "Hosted at Canal House Pub, this event invites local poets and storytellers to share their work in a relaxed, pub atmosphere. Enjoy an evening of creative expression accompanied by live acoustic music.",
     location: { latitude: 52.9535, longitude: -1.152 },
@@ -415,7 +415,7 @@ const eventData: Event[] = [
     title: "Acoustic Cultural Evening",
     description:
       "A night of live acoustic performances blending traditional and modern sounds.",
-    event_type: "Cultural",
+    event_type: "Culture",
     details:
       "Set in the inviting space of The Embankment Pub and Kitchen, enjoy live music from local bands and solo artists. The event focuses on acoustic renditions of cultural classics and contemporary hits.",
     location: { latitude: 52.9545, longitude: -1.156 },
@@ -432,7 +432,7 @@ const eventData: Event[] = [
     title: "Historical Reenactment Showcase",
     description:
       "An immersive experience bringing historical events and figures to life.",
-    event_type: "Cultural",
+    event_type: "Culture",
     details:
       "At Lace Market Hotel, watch reenactments of key moments in Nottingham’s history performed by talented local actors. The showcase includes interactive segments where audience members can participate.",
     location: { latitude: 52.957, longitude: -1.156 },
@@ -448,7 +448,7 @@ const eventData: Event[] = [
     title: "Local History Exhibition",
     description:
       "An exhibition exploring the milestones of Nottingham’s local history.",
-    event_type: "Cultural",
+    event_type: "Culture",
     details:
       "Hosted by the National Justice Museum, this exhibition features artifacts, archival photographs, and interactive displays detailing the city's evolution from medieval times to the modern era.",
     location: { latitude: 52.953, longitude: -1.1565 },
@@ -464,7 +464,7 @@ const eventData: Event[] = [
     title: "Interactive Cultural Workshop",
     description:
       "A hands-on workshop exploring traditional crafts and modern cultural expressions.",
-    event_type: "Cultural",
+    event_type: "Culture",
     details:
       "Held at The New Art Exchange, participants can engage in interactive sessions covering topics from digital storytelling to classic handicrafts, led by experienced cultural practitioners.",
     location: { latitude: 52.9538, longitude: -1.1525 },
@@ -481,7 +481,7 @@ const eventData: Event[] = [
     title: "Heritage Gala Dinner",
     description:
       "A formal evening celebrating Nottingham’s cultural heritage with fine dining and performances.",
-    event_type: "Cultural",
+    event_type: "Culture",
     details:
       "Set in the elegant surroundings of Strelley Hall, enjoy a curated dinner menu, classical music performances, and a keynote address on preserving local traditions.",
     location: { latitude: 52.948, longitude: -1.177 },
@@ -497,7 +497,7 @@ const eventData: Event[] = [
     title: "Culinary Culture Brunch",
     description:
       "A brunch event celebrating the fusion of culinary traditions and cultural diversity.",
-    event_type: "Cultural",
+    event_type: "Culture",
     details:
       "At Jam Cafe, sample a variety of dishes inspired by global cuisines while enjoying live music and cultural performances. This brunch is designed to delight food enthusiasts and cultural explorers alike.",
     location: { latitude: 52.9575, longitude: -1.155 },
@@ -513,7 +513,7 @@ const eventData: Event[] = [
     title: "Literary Salon & Storytelling",
     description:
       "A cozy evening of literature, storytelling, and discussion of classic works.",
-    event_type: "Cultural",
+    event_type: "Culture",
     details:
       "Hosted at The Cross Keys, this event invites authors, poets, and storytellers to share narratives that span generations. Engage in lively discussions and literary debates in an intimate setting.",
     location: { latitude: 52.9532, longitude: -1.1512 },
@@ -530,7 +530,7 @@ const eventData: Event[] = [
     title: "Avant-Garde Theatre Night",
     description:
       "An experimental theatre performance that challenges traditional narratives.",
-    event_type: "Cultural",
+    event_type: "Culture",
     details:
       "Set at Metronome, this theatre night features avant-garde performances, innovative stage designs, and immersive storytelling that redefines contemporary drama.",
     location: { latitude: 52.9578, longitude: -1.1522 },
@@ -546,7 +546,7 @@ const eventData: Event[] = [
     title: "Modern Art & Folk Fusion",
     description:
       "A fusion event blending modern art exhibitions with traditional folk performances.",
-    event_type: "Cultural",
+    event_type: "Culture",
     details:
       "Returning to Nottingham Contemporary, enjoy a day of creative displays that merge digital art with live folk music, celebrating the evolution of artistic expression.",
     location: { latitude: 52.9485, longitude: -1.161 },
@@ -562,7 +562,7 @@ const eventData: Event[] = [
     title: "Campus Culture Fair",
     description:
       "A lively fair showcasing student art, music, and cultural projects.",
-    event_type: "Cultural",
+    event_type: "Culture",
     details:
       "Hosted by Nottingham University, this event features pop-up art galleries, live music, and creative workshops organized by students and local artists, promoting campus diversity and talent.",
     location: { latitude: 52.953, longitude: -1.1749 },
@@ -579,7 +579,7 @@ const eventData: Event[] = [
     title: "World Cinema Showcase",
     description:
       "A screening event featuring international films that highlight diverse cultural narratives.",
-    event_type: "Cultural",
+    event_type: "Culture",
     details:
       "Taking place at Albert Hall Conference Centre, the showcase includes film screenings, director Q&A sessions, and discussions on global storytelling traditions.",
     location: { latitude: 52.952, longitude: -1.15 },
@@ -595,7 +595,7 @@ const eventData: Event[] = [
     title: "Folklore & Legends Forum",
     description:
       "A forum dedicated to exploring the myths, legends, and folklore of Nottingham and beyond.",
-    event_type: "Cultural",
+    event_type: "Culture",
     details:
       "Held at Trent Conference Centre, this event brings together folklorists, authors, and cultural historians to discuss and reenact age-old tales and traditions.",
     location: { latitude: 52.954, longitude: -1.151 },
@@ -612,7 +612,7 @@ const eventData: Event[] = [
     title: "Jazz & Blues Cultural Night",
     description:
       "An evening dedicated to the soulful sounds of jazz and blues.",
-    event_type: "Cultural",
+    event_type: "Culture",
     details:
       "Hosted at The Embankment Pub and Kitchen, enjoy live performances by local jazz and blues bands in an atmosphere that celebrates musical heritage and cultural diversity.",
     location: { latitude: 52.9545, longitude: -1.156 },
@@ -629,7 +629,7 @@ const eventData: Event[] = [
     title: "Cultural Heritage Lecture",
     description:
       "A lecture series exploring the significance of cultural preservation and heritage.",
-    event_type: "Cultural",
+    event_type: "Culture",
     details:
       "Presented by experts at the National Justice Museum, this lecture dives into the role of cultural heritage in shaping modern society and preserving historical narratives for future generations.",
     location: { latitude: 52.953, longitude: -1.1565 },
@@ -645,7 +645,7 @@ const eventData: Event[] = [
     title: "Multi-Cultural Food Festival",
     description:
       "A festival celebrating global cuisines and cultural culinary traditions.",
-    event_type: "Cultural",
+    event_type: "Culture",
     details:
       "Hosted at Lace Market Hotel, sample an array of dishes from around the world, enjoy cooking demonstrations, and experience live cultural performances that highlight Nottingham's vibrant food scene.",
     location: { latitude: 52.957, longitude: -1.156 },
