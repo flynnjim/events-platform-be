@@ -20,6 +20,20 @@
   },
   "GET /api/users/:user_id": {
     "description": "serves up single user by user_id",
+    "queries": ["Category"],
+    "exampleResponse": {
+      "topics": {
+        "user_id": 1,
+        "username": "tech_guru",
+        "first_name": "Alice",
+        "last_name": "Johnson",
+        "email": "alice.johnson@example.com",
+        "password_hash": "$2b$10$abcdefghijklmnopqrstuv"
+      }
+    }
+  },
+  "POST /api/users/login": {
+    "description": "serves up single user by username",
     "queries": [],
     "exampleResponse": {
       "topics": {
@@ -84,6 +98,21 @@
   },
   "GET /api/staff": {
     "description": "serves up an array of all staff",
+    "queries": [],
+    "exampleResponse": {
+      "topics": [
+        {
+          "staff_id": 1,
+          "first_name": "Liam",
+          "last_name": "Parker",
+          "email": "liam.parker@company.com",
+          "password_hash": "$2b$10$abcdefg12345678zxyTkjL6/2z5wD5U8Xp/a9rHg"
+        }
+      ]
+    }
+  },
+  "POST /api/staff/login": {
+    "description": "serves up single staff by email",
     "queries": [],
     "exampleResponse": {
       "topics": [
